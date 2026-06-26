@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tanviroilspk1-lgtm.github.io/greenroots/sitemap.xml
