@@ -84,23 +84,107 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:var(--bg);ove
 .hero-glow-2{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(212,168,67,0.08),transparent 70%);bottom:-5%;left:-5%;border-radius:50%}
 .hero-glow-3{position:absolute;width:300px;height:300px;background:radial-gradient(circle,rgba(34,197,94,0.06),transparent 70%);top:40%;left:30%;border-radius:50%;animation:heroFloat 8s ease-in-out infinite}
 @keyframes heroFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-30px)}}
-.hero-content{position:relative;z-index:2;text-align:center;max-width:800px}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.3);border-radius:50px;padding:8px 20px;margin-bottom:24px;animation:fadeInDown .8s ease}
+.hero-content{
+position:relative;
+z-index:2;
+text-align:center;
+max-width:800px;
+animation:floating 6s ease-in-out infinite;
+}
+.hero-badge{
+display:inline-flex;
+align-items:center;
+gap:8px;
+background:rgba(251,191,36,.12);
+border:1px solid rgba(251,191,36,.35);
+backdrop-filter:blur(12px);
+border-radius:60px;
+padding:10px 24px;
+margin-bottom:26px;
+animation:fadeInDown .8s ease;
+}
 .hero-badge span{font-size:11px;color:#fbbf24;font-weight:600;letter-spacing:2px;text-transform:uppercase}
-.hero-title{font-family:'Playfair Display',serif;font-size:clamp(36px,7vw,72px);font-weight:800;color:#fff;line-height:1.05;margin-bottom:16px;animation:fadeInUp .8s ease .2s both}
-.hero-title .gold{color:#fbbf24;display:block}
-.hero-desc{font-size:clamp(15px,2.2vw,18px);color:rgba(255,255,255,0.65);font-weight:300;line-height:1.7;margin-bottom:32px;max-width:580px;margin-left:auto;margin-right:auto;animation:fadeInUp .8s ease .4s both}
+.hero-title{
+font-family:'Playfair Display',serif;
+font-size:clamp(42px,7vw,82px);
+font-weight:800;
+line-height:1.02;
+letter-spacing:-1px;
+margin-bottom:20px;
+color:#ffffff;
+text-shadow:0 8px 35px rgba(0,0,0,.35);
+animation:fadeInUp .8s ease .2s both;
+}
+.hero-title .gold{
+display:block;
+margin-top:8px;
+background:linear-gradient(135deg,#fcd34d,#f59e0b,#fde68a);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-clip:text;
+}
+.hero-desc{
+font-size:clamp(17px,2.2vw,20px);
+color:rgba(255,255,255,.82);
+font-weight:400;
+line-height:1.9;
+max-width:700px;
+margin:0 auto 34px;
+}
 .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;animation:fadeInUp .8s ease .6s both}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#052e16;padding:14px 32px;border-radius:50px;font-size:15px;font-weight:700;text-decoration:none;transition:all .3s;box-shadow:0 4px 20px rgba(251,191,36,0.3)}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(251,191,36,0.4)}
+.btn-primary{
+display:inline-flex;
+align-items:center;
+gap:10px;
+background:linear-gradient(135deg,#fbbf24,#f59e0b);
+color:#052e16;
+padding:16px 36px;
+border-radius:60px;
+font-size:15px;
+font-weight:700;
+text-decoration:none;
+transition:all .35s ease;
+box-shadow:0 10px 30px rgba(251,191,36,.30);
+position:relative;
+overflow:hidden;
+}
+.btn-primary:hover{
+transform:translateY(-5px) scale(1.03);
+box-shadow:0 18px 45px rgba(251,191,36,.45);
+}
 .btn-primary svg{width:18px;height:18px;fill:#052e16}
-.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:14px 32px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.25);transition:all .3s}
-.btn-secondary:hover{border-color:#fbbf24;color:#fbbf24;transform:translateY(-3px)}
+.btn-secondary{
+display:inline-flex;
+align-items:center;
+gap:8px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+color:#fff;
+padding:16px 36px;
+border-radius:60px;
+font-size:15px;
+font-weight:600;
+text-decoration:none;
+border:1px solid rgba(255,255,255,.20);
+transition:all .35s ease;
+}
+.btn-secondary:hover{
+background:rgba(251,191,36,.12);
+border-color:#fbbf24;
+color:#fbbf24;
+transform:translateY(-5px);
+box-shadow:0 12px 35px rgba(251,191,36,.20);
+}
 .hero-stats{display:flex;gap:36px;justify-content:center;margin-top:50px;animation:fadeInUp .8s ease .8s both}
 .hero-stat{text-align:center}
 .hero-stat-num{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#fbbf24}
 .hero-stat-label{font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
 @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes floating{
+0%{transform:translateY(0);}
+50%{transform:translateY(-6px);}
+100%{transform:translateY(0);}
+}
 @keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
 
 .section{padding:80px 20px}
@@ -396,18 +480,34 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:var(--bg);ove
 <section class="hero" id="home">
   <div class="hero-pattern"></div><div class="hero-glow-1"></div><div class="hero-glow-2"></div><div class="hero-glow-3"></div>
   <div class="hero-content">
-    <div class="hero-badge"><span>🌿 100% Cold Pressed • Fully Organic</span></div>
-    <h1 class="hero-title">Green Roots <span class="gold">Herbal Oils</span></h1>
-    <p class="hero-desc">Premium quality cold pressed herbal oils & shampoo for naturally beautiful, strong and shiny hair. Made with love, powered by nature.</p>
+ <div class="hero-badge"><span>🌿 Come On, Hair Lovers!</span></div>
+   <h1 class="hero-title">
+Healthy Hair Begins
+<span class="gold">with Nature</span>
+</h1>
+    <p class="hero-desc">
+Premium herbal hair care made with carefully selected natural ingredients to nourish your scalp, reduce hair fall, and support naturally healthy, strong and shiny hair.
+</p>
     <div class="hero-btns">
-      <a href="https://wa.me/c/923199088670" target="_blank" class="btn-primary"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg> Order on WhatsApp</a>
-      <a href="#products" class="btn-secondary">View Products →</a>
+      <a href="https://wa.me/c/923199088670" target="_blank" class="btn-primary"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg> WhatsApp Order</a>
+      <a href="#products" class="btn-secondary">Shop Collection →</a>
     </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><div class="hero-stat-num">11</div><div class="hero-stat-label">Products</div></div>
-      <div class="hero-stat"><div class="hero-stat-num">100</div><div class="hero-stat-label">% Organic</div></div>
-      <div class="hero-stat"><div class="hero-stat-num">500</div><div class="hero-stat-label">Happy Customers</div></div>
+   <div class="hero-stats">
+    <div class="hero-stat">
+        <div class="hero-stat-num">11</div>
+        <div class="hero-stat-label">Products</div>
     </div>
+
+    <div class="hero-stat">
+        <div class="hero-stat-num">100%</div>
+        <div class="hero-stat-label">Natural</div>
+    </div>
+
+    <div class="hero-stat">
+        <div class="hero-stat-num">Made</div>
+        <div class="hero-stat-label">In Pakistan 🇵🇰</div>
+    </div>
+</div>
   </div>
 </section>
 
@@ -452,10 +552,14 @@ body{font-family:'Poppins',sans-serif;color:var(--text);background:var(--bg);ove
       </div>
     </div>
     <div class="about-text">
-      <div class="about-sub">Our Story</div>
-      <h2>Made With Love,<br>Powered By Nature</h2>
-      <p>I have always had a deep love for hair — the way it looks, the way it feels, the confidence it gives. That love became my passion, and that passion became Green Roots.</p>
-      <p>I started this journey to help others achieve the beautiful, healthy hair they deserve — using nothing but nature's finest ingredients. Every bottle is made with care, honesty, and the belief that real beauty doesn't need chemicals.</p>
+      <div class="about-sub">Our Journey</div>
+      <h2>Every Great Hair Journey<br>Starts With Nature</h2>
+      <p>
+I have always believed that healthy hair brings confidence. My love for natural hair care inspired me to create Green Roots—a brand dedicated to helping every hair lover enjoy stronger, healthier and naturally beautiful hair through carefully selected herbal ingredients.
+</p>
+      <p>
+Every product is prepared with care, honesty and respect for nature. Our mission is simple: provide high-quality herbal hair care that families across Pakistan can trust as part of their daily hair care routine.
+</p>
       <div class="about-features">
         <div class="about-feat"><div class="about-feat-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>100% Cold Pressed</div>
         <div class="about-feat"><div class="about-feat-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Fully Organic</div>
