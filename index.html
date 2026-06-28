@@ -1,840 +1,2868 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" type="image/png" href="favicon.png">
-<title>Green Roots Pakistan | 100% Natural Hair Oils & Herbal Shampoo</title>
-<meta name="description" content="Green Roots Pakistan offers 100% natural hair oils and herbal shampoo. Coconut Oil, Mustard Oil, Almond Oil, Root Strength Oil, Strong & Shine Oil and more for healthy, strong and beautiful hair.">
-<meta name="keywords" content="Green Roots, Hair Oil Pakistan, Natural Hair Oil, Herbal Shampoo, Coconut Oil, Mustard Oil, Almond Oil, Hair Growth Oil, Organic Hair Oil">
-<meta name="author" content="Green Roots Pakistan">
-<meta property="og:title" content="Green Roots Pakistan | 100% Natural Hair Oils & Herbal Shampoo">
-<meta property="og:description" content="100% Natural Hair Oils & Herbal Shampoo for Healthy, Strong & Beautiful Hair.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://tanviroilspk1-lgtm.github.io/greenroots/">
-<meta property="og:image" content="https://tanviroilspk1-lgtm.github.io/greenroots/favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#FFF8F0;--bg2:#FFF3E6;--bg-card:#FFFFFF;--bg-card2:#FEFCF5;
-  --text:#2D2D2D;--text2:#6B5E4F;--text3:#9C8E7C;
-  --accent:#B8860B;--accent-l:#F5DEB3;--accent-d:#8B6914;
-  --border:rgba(184,134,11,0.12);--shadow:rgba(0,0,0,0.06);
-  --green:#5C8A4D;--green-d:#3D6B3F;--gold:#D4A843;
-  --nav:rgba(45,30,15,0.95);--nav2:rgba(45,30,15,0.98);
-  --section:#F5F0E8;--cream:#FEFCF5;
-  --radius:20px;
-}
-[data-theme="dark"]{
-  --bg:#1A1208;--bg2:#241C10;--bg-card:#2D2418;--bg-card2:#362D1E;
-  --text:#F5F0E6;--text2:#A89880;--text3:#7A6E5E;
-  --accent:#D4A843;--accent-l:#5C4A2E;--accent-d:#F5DEB3;
-  --border:rgba(212,168,67,0.15);--shadow:rgba(0,0,0,0.3);
-  --green:#7CB87A;--green-d:#5C9A64;
-  --nav:rgba(10,8,2,0.98);--nav2:rgba(10,8,2,1);
-  --section:#1E1A10;--cream:#2D2418;
-}
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Poppins',sans-serif;color:var(--text);background:var(--bg);overflow-x:hidden;transition:background .4s,color .4s}
-[data-lang="ur"] body{font-family:'Noto Nastaliq Urdu','Poppins',sans-serif;direction:rtl}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>Green Roots Pakistan | 100% Natural Hair Oils & Herbal Shampoo</title>
+  <meta name="description"
+    content="Green Roots Pakistan offers 100% natural hair oils and herbal shampoo. Coconut Oil, Mustard Oil, Almond Oil, Root Strength Oil, Strong & Shine Oil and more for healthy, strong and beautiful hair.">
+  <meta name="keywords"
+    content="Green Roots, Hair Oil Pakistan, Natural Hair Oil, Herbal Shampoo, Coconut Oil, Mustard Oil, Almond Oil, Hair Growth Oil, Organic Hair Oil">
+  <meta name="author" content="Green Roots Pakistan">
+  <meta property="og:title" content="Green Roots Pakistan | 100% Natural Hair Oils & Herbal Shampoo">
+  <meta property="og:description"
+    content="100% Natural Hair Oils & Herbal Shampoo for Healthy, Strong & Beautiful Hair.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tanviroilspk1-lgtm.github.io/greenroots/">
+  <meta property="og:image" content="https://tanviroilspk1-lgtm.github.io/greenroots/favicon.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FFF8F0;
+      --bg2: #FFF3E6;
+      --bg-card: #FFFFFF;
+      --bg-card2: #FEFCF5;
+      --text: #2D2D2D;
+      --text2: #6B5E4F;
+      --text3: #9C8E7C;
+      --accent: #B8860B;
+      --accent-l: #F5DEB3;
+      --accent-d: #8B6914;
+      --border: rgba(184, 134, 11, 0.12);
+      --shadow: rgba(0, 0, 0, 0.06);
+      --green: #5C8A4D;
+      --green-d: #3D6B3F;
+      --gold: #D4A843;
+      --nav: rgba(45, 30, 15, 0.95);
+      --nav2: rgba(45, 30, 15, 0.98);
+      --section: #F5F0E8;
+      --cream: #FEFCF5;
+      --radius: 20px;
+    }
 
-.loader{position:fixed;inset:0;background:var(--nav);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transition:opacity .6s}
-.loader.hide{opacity:0;pointer-events:none}
-.loader-brand{font-family:'Playfair Display',serif;font-size:36px;font-weight:800;color:var(--gold);letter-spacing:2px}
-.loader-sub{font-size:12px;color:rgba(250,240,230,0.5);letter-spacing:4px;text-transform:uppercase}
-.loader-bar{width:200px;height:3px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;position:relative}
-.loader-bar::after{content:'';position:absolute;left:-50%;width:50%;height:100%;background:linear-gradient(90deg,transparent,var(--gold),transparent);animation:loadBar 1.5s ease infinite}
-@keyframes loadBar{0%{left:-50%}100%{left:100%}}
+    [data-theme="dark"] {
+      --bg: #1A1208;
+      --bg2: #241C10;
+      --bg-card: #2D2418;
+      --bg-card2: #362D1E;
+      --text: #F5F0E6;
+      --text2: #A89880;
+      --text3: #7A6E5E;
+      --accent: #D4A843;
+      --accent-l: #5C4A2E;
+      --accent-d: #F5DEB3;
+      --border: rgba(212, 168, 67, 0.15);
+      --shadow: rgba(0, 0, 0, 0.3);
+      --green: #7CB87A;
+      --green-d: #5C9A64;
+      --nav: rgba(10, 8, 2, 0.98);
+      --nav2: rgba(10, 8, 2, 1);
+      --section: #1E1A10;
+      --cream: #2D2418;
+    }
 
-.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--nav);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transition:all .3s;height:70px}
-.navbar.scrolled{background:var(--nav2);box-shadow:0 4px 30px rgba(0,0,0,0.2)}
-.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:70px}
-.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nav-logo-icon{width:38px;height:38px;background:linear-gradient(135deg,var(--green),var(--green-d));border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.nav-logo-icon svg{width:20px;height:20px;fill:#fff}
-.nav-logo-text{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold);letter-spacing:1px;line-height:1}
-.nav-logo-sub{font-size:8px;color:rgba(250,240,230,0.5);letter-spacing:2px;text-transform:uppercase;display:block}
-.nav-center{display:flex;gap:20px;align-items:center}
-.nav-center a{color:var(--text2);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:0.3px;transition:color .3s;position:relative;white-space:nowrap}
-.nav-center a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--gold);transition:width .3s}
-.nav-center a:hover{color:var(--gold)}
-.nav-center a:hover::after{width:100%}
-.nav-right{display:flex;align-items:center;gap:10px}
-.nav-btn{width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text2);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .3s;font-size:14px}
-.nav-btn:hover{background:var(--accent-l);color:var(--accent-d);border-color:var(--accent)}
-.nav-btn svg{width:16px;height:16px;fill:currentColor}
-.nav-wa{background:linear-gradient(135deg,#25d366,#128c7e)!important;color:#fff!important;width:auto!important;padding:7px 16px!important;border-radius:50px!important;font-size:12px!important;font-weight:600!important;border:none!important;display:inline-flex!important;align-items:center!important;gap:6px!important;transition:all .3s;text-decoration:none;}
-.nav-wa:hover{transform:translateY(-2px);box-shadow:0 4px 15px rgba(37,211,102,0.3)}
-.nav-wa svg{width:14px;height:14px;fill:#fff}
-.nav-cart{position:relative}
-.nav-cart .badge{position:absolute;top:-4px;right:-4px;width:18px;height:18px;background:var(--accent);color:var(--bg);border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(0);transition:all .3s}
-.nav-cart .badge.show{opacity:1;transform:scale(1)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
-.hamburger span{width:22px;height:2px;background:var(--text);border-radius:2px;transition:all .3s}
-.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;bottom:0;background:var(--nav2);backdrop-filter:blur(20px);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:20px;opacity:0;transform:translateY(-20px);transition:all .4s;pointer-events:none}
-.mobile-menu.open{opacity:1;transform:translateY(0);pointer-events:auto}
-.mobile-menu a{color:var(--text);text-decoration:none;font-size:18px;font-weight:500;letter-spacing:0.5px;transition:color .3s}
-.mobile-menu a:hover{color:var(--gold)}
-.mobile-menu .mob-actions{display:flex;gap:12px;margin-top:10px}
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
 
-.hero{min-height:100vh;background:linear-gradient(135deg,#052e16 0%,#14532d 30%,#166534 60%,#15803d 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:100px 20px 60px}
-.hero-pattern{position:absolute;inset:0;opacity:0.04;background-image:radial-gradient(circle at 20% 50%,#fff 1px,transparent 1px),radial-gradient(circle at 80% 20%,#fff 1px,transparent 1px);background-size:60px 60px,80px 80px,70px 70px}
-.hero-glow-1{position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(34,197,94,0.12),transparent 70%);top:-10%;right:-10%;border-radius:50%}
-.hero-glow-2{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(212,168,67,0.08),transparent 70%);bottom:-5%;left:-5%;border-radius:50%}
-.hero-glow-3{position:absolute;width:300px;height:300px;background:radial-gradient(circle,rgba(34,197,94,0.06),transparent 70%);top:40%;left:30%;border-radius:50%;animation:heroFloat 8s ease-in-out infinite}
-@keyframes heroFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-30px)}}
-.hero-content{
-position:relative;
-z-index:2;
-text-align:center;
-max-width:800px;
-animation:floating 6s ease-in-out infinite;
-}
-.hero-badge{
-display:inline-flex;
-align-items:center;
-gap:8px;
-background:rgba(251,191,36,.12);
-border:1px solid rgba(251,191,36,.35);
-backdrop-filter:blur(12px);
-border-radius:60px;
-padding:10px 24px;
-margin-bottom:26px;
-animation:fadeInDown .8s ease;
-}
-.hero-badge span{font-size:11px;color:#fbbf24;font-weight:600;letter-spacing:2px;text-transform:uppercase}
-.hero-title{
-font-family:'Playfair Display',serif;
-font-size:clamp(42px,7vw,82px);
-font-weight:800;
-line-height:1.02;
-letter-spacing:-1px;
-margin-bottom:20px;
-color:#ffffff;
-text-shadow:0 8px 35px rgba(0,0,0,.35);
-animation:fadeInUp .8s ease .2s both;
-}
-.hero-title .gold{
-display:block;
-margin-top:8px;
-background:linear-gradient(135deg,#fcd34d,#f59e0b,#fde68a);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-background-clip:text;
-}
-.hero-desc{
-font-size:clamp(17px,2.2vw,20px);
-color:rgba(255,255,255,.82);
-font-weight:400;
-line-height:1.9;
-max-width:700px;
-margin:0 auto 34px;
-}
-.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;animation:fadeInUp .8s ease .6s both}
-.btn-primary{
-display:inline-flex;
-align-items:center;
-gap:10px;
-background:linear-gradient(135deg,#fbbf24,#f59e0b);
-color:#052e16;
-padding:16px 36px;
-border-radius:60px;
-font-size:15px;
-font-weight:700;
-text-decoration:none;
-transition:all .35s ease;
-box-shadow:0 10px 30px rgba(251,191,36,.30);
-position:relative;
-overflow:hidden;
-}
-.btn-primary:hover{
-transform:translateY(-5px) scale(1.03);
-box-shadow:0 18px 45px rgba(251,191,36,.45);
-}
-.btn-primary svg{width:18px;height:18px;fill:#052e16}
-.btn-secondary{
-display:inline-flex;
-align-items:center;
-gap:8px;
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(12px);
-color:#fff;
-padding:16px 36px;
-border-radius:60px;
-font-size:15px;
-font-weight:600;
-text-decoration:none;
-border:1px solid rgba(255,255,255,.20);
-transition:all .35s ease;
-}
-.btn-secondary:hover{
-background:rgba(251,191,36,.12);
-border-color:#fbbf24;
-color:#fbbf24;
-transform:translateY(-5px);
-box-shadow:0 12px 35px rgba(251,191,36,.20);
-}
-.hero-stats{display:flex;gap:36px;justify-content:center;margin-top:50px;animation:fadeInUp .8s ease .8s both}
-.hero-stat{text-align:center}
-.hero-stat-num{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#fbbf24}
-.hero-stat-label{font-size:11px;color:rgba(255,255,255,0.45);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-@keyframes floating{
-0%{transform:translateY(0);}
-50%{transform:translateY(-6px);}
-100%{transform:translateY(0);}
-}
-@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+    html {
+      scroll-behavior: smooth
+    }
 
-.section{padding:80px 20px}
-.section-header{text-align:center;margin-bottom:40px}
-.section-label{display:inline-block;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:10px}
-.section-title{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,44px);font-weight:700;color:var(--text);line-height:1.2;margin-bottom:10px}
-.section-line{width:60px;height:3px;background:linear-gradient(to right,var(--green),var(--gold));margin:0 auto;border-radius:2px}
-.section-desc{font-size:15px;color:var(--text2);max-width:580px;margin:12px auto 0;line-height:1.7}
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      overflow-x: hidden;
+      transition: background .4s, color .4s
+    }
 
-.products-section{background:var(--bg2)}
-.product-filters{display:flex;justify-content:center;gap:10px;margin-bottom:30px;flex-wrap:wrap}
-.filter-btn{padding:10px 24px;border-radius:50px;border:2px solid var(--border);background:transparent;color:var(--text2);font-size:13px;font-weight:600;cursor:pointer;transition:all .3s;font-family:'Poppins',sans-serif}
-.filter-btn.active,.filter-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 2px 10px rgba(184,134,11,0.2)}
-.search-bar{max-width:400px;margin:0 auto 30px;position:relative}
-.search-bar input{width:100%;padding:12px 20px 12px 46px;border:2px solid var(--border);border-radius:50px;font-size:14px;font-family:'Poppins',sans-serif;background:var(--bg-card);color:var(--text);outline:none;transition:border-color .3s}
-.search-bar input:focus{border-color:var(--accent)}
-.search-bar svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;fill:var(--text3)}
-.products-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
-.product-card{
-position:relative;
-background:rgba(255,255,255,.96);
-border:1px solid rgba(255,255,255,.6);
-border-radius:24px;
-overflow:hidden;
-transition:all .4s ease;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
-backdrop-filter:blur(12px);
-cursor:pointer;
-}
-.product-card:hover{
-transform:translateY(-14px) scale(1.02);
-box-shadow:0 35px 70px rgba(0,0,0,.18);
-border-color:#fbbf24;
-background:linear-gradient(180deg,#ffffff,#fdfcf7);
-}
-.product-img-area{height:260px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--bg)}
-.product-img-area img{width:85%;height:85%;object-fit:contain;transition:transform .6s}
-.product-card:hover .product-img-area img{
-transform:scale(1.12) rotate(-2deg);
-}
-.product-badge{position:absolute;top:10px;right:10px;background:var(--bg-card);color:var(--text);font-size:9px;font-weight:700;padding:4px 10px;border-radius:50px;letter-spacing:0.5px;text-transform:uppercase;box-shadow:0 2px 8px var(--shadow)}
-.product-tag{position:absolute;top:10px;left:10px;background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#052e16;font-size:9px;font-weight:700;padding:4px 10px;border-radius:50px;letter-spacing:0.5px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-.product-info{
-padding:20px;
-background:linear-gradient(to bottom,#ffffff,#f9fafb);
-}
-.product-name{
-font-family:'Playfair Display',serif;
-font-size:19px;
-font-weight:700;
-color:var(--text);
-margin-bottom:8px;
-line-height:1.35;
-transition:.3s;
-}
-.product-desc{
-font-size:13px;
-color:var(--text2);
-line-height:1.7;
-margin-bottom:14px;
-min-height:44px;
-}
-.product-price{
-  font-size:22px;
-  font-weight:700;
-  color:#166534;
-}
-.product-price small{font-size:12px;font-weight:400;color:var(--text3)}
-.product-wa{
-width:46px;
-height:46px;
-background:linear-gradient(135deg,#25D366,#128C7E);
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-text-decoration:none;
-transition:.35s;
-box-shadow:0 8px 20px rgba(37,211,102,.30);
-flex-shrink:0;
-}
-.product-wa:hover{
-transform:translateY(-4px) scale(1.08);
-box-shadow:0 15px 35px rgba(37,211,102,.45);
-}
-.product-wa svg{width:18px;height:18px;fill:#fff}
-.product-add-cart{
-width:46px;
-height:46px;
-background:#ecfdf5;
-border:2px solid #22c55e;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-transition:.35s;
-color:#166534;
-cursor:pointer;
-flex-shrink:0;
-}
-.product-add-cart:hover{
-background:#22c55e;
-color:#fff;
-transform:translateY(-4px) scale(1.08);
-box-shadow:0 12px 30px rgba(34,197,94,.35);
-}
-.product-add-cart svg{width:18px;height:18px;fill:currentColor}
+    [data-lang="ur"] body {
+      font-family: 'Noto Nastaliq Urdu', 'Poppins', sans-serif;
+      direction: rtl
+    }
 
-.ba-section{background:var(--bg)}
-.ba-container{max-width:800px;margin:0 auto;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative;height:400px;background:var(--bg-card)}
-.ba-slider{position:absolute;inset:0;display:flex;overflow:hidden}
-.ba-before,.ba-after{width:100%;height:100%;object-fit:cover;flex-shrink:0}
-.ba-divider{position:absolute;top:0;left:50%;width:4px;height:100%;background:#fff;transform:translateX(-50%);cursor:ew-resize;z-index:2;box-shadow:0 0 10px rgba(0,0,0,0.3)}
-.ba-label{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);z-index:3;background:rgba(0,0,0,0.6);color:#fff;padding:6px 20px;border-radius:50px;font-size:12px;font-weight:600;letter-spacing:1px;backdrop-filter:blur(4px);white-space:nowrap}
-.ba-label span{color:var(--gold)}
-.ba-left{position:absolute;top:16px;left:16px;z-index:3;background:rgba(0,0,0,0.5);color:#fff;padding:4px 14px;border-radius:50%;font-size:11px;backdrop-filter:blur(4px)}
-.ba-right{position:absolute;top:16px;right:16px;z-index:3;background:rgba(0,0,0,0.5);color:#fff;padding:4px 14px;border-radius:50%;font-size:11px;backdrop-filter:blur(4px)}
+    .loader {
+      position: fixed;
+      inset: 0;
+      background: var(--nav);
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      transition: opacity .6s
+    }
 
-.about-section{background:var(--bg2)}
-.about-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.about-img{position:relative}
-.about-img-main{width:100%;height:420px;border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,0.1);background:#000;border:none;}
-.about-img-float{position:absolute;bottom:-16px;right:-16px;background:var(--bg-card);border-radius:var(--radius);padding:16px;box-shadow:0 10px 30px rgba(0,0,0,0.1);display:flex;align-items:center;gap:10px}
-.about-img-float-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--green),var(--green-d));border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.about-img-float-icon svg{width:22px;height:22px;fill:#fff}
-.about-img-float-text{font-size:12px;color:var(--text3);line-height:1.3}
-.about-img-float-text strong{display:block;color:var(--text);font-size:14px}
-.about-text h2{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--text);margin-bottom:6px}
-.about-sub{font-size:13px;color:var(--green);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
-.about-text p{font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:12px}
-.about-features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
-.about-feat{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text);font-weight:500}
-.about-feat-icon{width:28px;height:28px;background:rgba(92,138,77,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.about-feat-icon svg{width:14px;height:14px;fill:var(--green)}
+    .loader.hide {
+      opacity: 0;
+      pointer-events: none
+    }
 
-.whyus-section{background:linear-gradient(135deg,#052e16 0%,#14532d 50%,#166534 100%);color:#fff}
-.whyus-section .section-label{color:#4ade80}
-.whyus-section .section-title{color:#fff}
-.whyus-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.whyus-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:28px 20px;text-align:center;transition:all .4s;backdrop-filter:blur(10px)}
-.whyus-card:hover{background:rgba(255,255,255,0.1);transform:translateY(-5px);border-color:rgba(251,191,36,0.3)}
-.whyus-icon{width:56px;height:56px;background:linear-gradient(135deg,rgba(251,191,36,0.15),rgba(34,197,94,0.15));border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;border:1px solid rgba(251,191,36,0.2)}
-.whyus-icon svg{width:24px;height:24px;fill:#fbbf24}
-.whyus-card h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;margin-bottom:6px;color:#fbbf24}
-.whyus-card p{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.6}
+    .loader-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 2px
+    }
 
-.reviews-section{background:var(--bg)}
-.slider-wrapper{max-width:1100px;margin:0 auto;position:relative;overflow:hidden;padding:0 10px;}
-.slider-track{display:flex;transition:transform .5s ease}
-.slider-card{min-width:100%;padding:0 10px;flex-shrink:0;box-sizing:border-box}
-.review-card{background:var(--bg-card);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);border:1px solid var(--border);position:relative}
-.review-card::before{content:'"';font-family:'Playfair Display',serif;font-size:70px;color:rgba(34,197,94,0.08);position:absolute;top:8px;left:16px;line-height:1}
-.review-stars{display:flex;gap:2px;margin-bottom:10px}
-.review-stars svg{width:16px;height:16px;fill:#fbbf24}
-.review-text{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:14px;position:relative;z-index:1}
-.review-author{display:flex;align-items:center;gap:10px}
-.review-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:15px}
-.review-name{font-weight:600;color:var(--text);font-size:14px}
-.review-date{font-size:11px;color:var(--text3)}
-.slider-dots{display:flex;justify-content:center;gap:8px;margin-top:20px}
-.slider-dot{width:10px;height:10px;border-radius:50%;background:var(--border);cursor:pointer;transition:all .3s}
-.slider-dot.active{background:var(--gold);transform:scale(1.2)}
-.slider-arrows{position:absolute;top:50%;width:100%;display:flex;justify-content:space-between;padding:0 4px;pointer-events:none;z-index:5;transform:translateY(-50%);box-sizing:border-box}
-.slider-arrow{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.8);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;cursor:pointer;pointer-events:auto;transition:all .3s;color:var(--text2);border:1px solid var(--border);font-size:16px}
-.slider-arrow:hover{background:var(--accent-l);color:var(--accent-d);border-color:var(--accent)}
-.review-form-btn{display:block;margin:30px auto 0;background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;border:none;padding:12px 32px;border-radius:50px;font-size:14px;font-weight:600;cursor:pointer;transition:all .3s;box-shadow:0 4px 15px rgba(34,197,94,0.3)}
-.review-form-btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(34,197,94,0.4)}
+    .loader-sub {
+      font-size: 12px;
+      color: rgba(250, 240, 230, 0.5);
+      letter-spacing: 4px;
+      text-transform: uppercase
+    }
 
-.faq-section{background:var(--bg2)}
-.faq-list{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
-.faq-item{background:var(--bg-card);border-radius:16px;border:1px solid var(--border);overflow:hidden;transition:box-shadow .3s}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;cursor:pointer;gap:14px}
-.faq-q h4{font-size:15px;font-weight:600;color:var(--text);line-height:1.5;flex:1}
-.faq-icon{width:28px;height:28px;background:rgba(34,197,94,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s}
-.faq-icon svg{width:14px;height:14px;fill:var(--green);transition:all .3s}
-.faq-item.open .faq-icon{background:var(--green)}
-.faq-item.open .faq-icon svg{fill:#fff;transform:rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease}
-.faq-item.open .faq-a{max-height:300px;padding:0 22px 18px}
-.faq-a p{font-size:13px;color:var(--text2);line-height:1.7}
+    .loader-bar {
+      width: 200px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      overflow: hidden;
+      position: relative
+    }
 
-.contact-section{background:linear-gradient(135deg,#022c22 0%,#052e16 50%,#14532d 100%);color:#fff}
-.contact-section .section-label{color:#4ade80}
-.contact-section .section-title{color:#fff}
-.contact-section .section-desc{color:rgba(255,255,255,0.6)}
-.contact-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.contact-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);padding:24px;display:flex;align-items:flex-start;gap:14px;transition:all .3s;backdrop-filter:blur(10px);text-decoration:none;color:inherit}
-.contact-card:hover{background:rgba(255,255,255,0.1);border-color:rgba(251,191,36,0.2)}
-.contact-card-icon{width:44px;height:44px;background:linear-gradient(135deg,rgba(251,191,36,0.15),rgba(34,197,94,0.1));border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid rgba(251,191,36,0.2)}
-.contact-card-icon svg{width:20px;height:20px;fill:#fbbf24}
-.contact-card h4{font-size:15px;font-weight:600;color:#fbbf24;margin-bottom:3px}
-.contact-card p{font-size:13px;color:rgba(255,255,255,0.7);line-height:1.6}
-.contact-wa-big{grid-column:1/-1;text-align:center;margin-top:8px}
-.contact-wa-big a{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;padding:16px 40px;border-radius:50px;font-size:17px;font-weight:700;text-decoration:none;transition:all .3s;box-shadow:0 8px 30px rgba(37,211,102,0.3)}
-.contact-wa-big a:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(37,211,102,0.4)}
-.contact-wa-big a svg{width:22px;height:22px;fill:#fff}
-.contact-note{text-align:center;margin-top:12px;font-size:12px;color:rgba(255,255,255,0.35)}
-.qr-area{grid-column:1/-1;display:flex;justify-content:center;margin-top:8px}
-.qr-box{background:#fff;border-radius:var(--radius);padding:20px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,0.12)}
-.qr-box p{font-size:11px;color:var(--text3);margin-top:8px;font-weight:500}
-.qr-box img{width:140px;height:140px;border-radius:10px;object-fit:contain}
-.easypaisa-info{grid-column:1/-1;display:flex;justify-content:center;gap:16px;margin-top:12px;flex-wrap:wrap}
-.easypaisa-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#1a6b3c,#0d4f2d);color:#fff;padding:12px 28px;border-radius:50px;font-size:14px;font-weight:700;text-decoration:none;transition:all .3s;box-shadow:0 4px 15px rgba(26,107,60,0.3)}
-.easypaisa-btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(26,107,60,0.4)}
-.easypaisa-btn svg{width:18px;height:18px;fill:#fff}
+    .loader-bar::after {
+      content: '';
+      position: absolute;
+      left: -50%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      animation: loadBar 1.5s ease infinite
+    }
 
-.footer{background:#011a10;padding:36px 20px 16px;color:rgba(255,255,255,0.45);text-align:center}
-.footer-brand{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#fbbf24;margin-bottom:6px}
-.footer p{font-size:12px;line-height:1.7}
-.footer-links{display:flex;justify-content:center;gap:16px;margin:14px 0;flex-wrap:wrap}
-.footer-links a{color:rgba(255,255,255,0.45);text-decoration:none;font-size:12px;transition:color .3s}
-.footer-links a:hover{color:#fbbf24}
-.footer-copy{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px}
+    @keyframes loadBar {
+      0% {
+        left: -50%
+      }
 
-.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:2000;opacity:0;pointer-events:none;transition:opacity .3s}
-.cart-overlay.open{opacity:1;pointer-events:auto}
-.cart-sidebar{position:fixed;top:0;right:-400px;width:380px;height:100%;background:var(--bg-card);z-index:2001;transition:right .4s cubic-bezier(0.4,0,0.2,1);box-shadow:-8px 0 30px rgba(0,0,0,0.2);display:flex;flex-direction:column;overflow:hidden}
-.cart-overlay.open .cart-sidebar{right:0}
-.cart-header{display:flex;align-items:center;justify-content:space-between;padding:20px;border-bottom:1px solid var(--border)}
-.cart-header h3{font-family:'Playfair Display',serif;font-size:20px;color:var(--text)}
-.cart-close{width:32px;height:32px;border-radius:50%;border:none;background:var(--bg2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--text2);transition:all .3s}
-.cart-close:hover{background:var(--border)}
-.cart-items{flex:1;overflow-y:auto;padding:16px}
-.cart-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border)}
-.cart-item img{width:60px;height:60px;object-fit:contain;border-radius:10px;background:var(--bg)}
-.cart-item-info{flex:1;min-width:0}
-.cart-item-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:2px}
-.cart-item-price{font-size:14px;font-weight:700;color:var(--green)}
-.cart-item-qty{display:flex;align-items:center;gap:8px;margin-top:4px}
-.qty-btn{width:26px;height:26px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:16px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
-.qty-btn:hover{background:var(--accent-l);border-color:var(--accent);color:var(--accent-d)}
-.cart-item-remove{background:none;border:none;color:var(--text3);cursor:pointer;font-size:14px;padding:4px;transition:color .3s;line-height:1;margin-top:6px;display:block}
-.cart-item-remove:hover{color:#e74c3c}
-.cart-footer{padding:16px 20px;border-top:1px solid var(--border)}
-.cart-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-.cart-total-label{font-size:14px;color:var(--text2)}
-.cart-total-price{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--gold)}
-.cart-checkout{width:100%;padding:12px;border:none;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;transition:all .3s;margin-bottom:8px}
-.cart-checkout.cash{background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff}
-.cart-checkout.easypaisa{background:linear-gradient(135deg,#1a6b3c,#0d4f2d);color:#fff}
-.cart-checkout:hover{transform:translateY(-1px);box-shadow:0 4px 15px rgba(0,0,0,0.15)}
-.cart-empty{text-align:center;padding:40px 20px;color:var(--text3);font-size:14px}
+      100% {
+        left: 100%
+      }
+    }
 
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(5px);z-index:3000;display:none;align-items:center;justify-content:center;padding:20px}
-.modal-overlay.open{display:flex}
-.modal{background:var(--bg-card);border-radius:var(--radius);padding:32px;max-width:460px;width:100%;position:relative;animation:modalIn .3s ease;max-height:90vh;overflow-y:auto}
-@keyframes modalIn{from{opacity:0;transform:scale(0.9) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
-.modal-close{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;border:none;background:var(--bg2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--text2);transition:background .3s}
-.modal-close:hover{background:var(--border)}
-.modal h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--text);margin-bottom:16px}
-.form-group{margin-bottom:14px}
-.form-group label{display:block;font-size:12px;font-weight:600;color:var(--text2);margin-bottom:5px;letter-spacing:0.5px}
-.form-group input,.form-group textarea,.form-group select{width:100%;padding:10px 14px;border:2px solid var(--border);border-radius:10px;font-size:14px;font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);outline:none;transition:border-color .3s}
-.form-group input:focus,.form-group textarea:focus{border-color:var(--green)}
-.form-group textarea{height:80px;resize:vertical}
-.star-select{display:flex;gap:6px}
-.star-select button{background:none;border:none;cursor:pointer;padding:2px;transition:transform .2s}
-.star-select button:hover{transform:scale(1.2)}
-.star-select button svg{width:24px;height:24px;fill:var(--border);transition:fill .2s}
-.star-select button.active svg{fill:#fbbf24}
-.form-submit{width:100%;padding:12px;background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;transition:all .3s;margin-top:6px}
-.form-submit:hover{box-shadow:0 4px 15px rgba(34,197,94,0.4);transform:translateY(-1px)}
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--nav);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      transition: all .3s;
+      height: 70px
+    }
 
-.back-to-top{position:fixed;bottom:24px;left:24px;z-index:1500;width:46px;height:46px;background:var(--bg-card);border:2px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .3s;opacity:0;transform:translateY(20px);box-shadow:var(--shadow)}
-.back-to-top.show{opacity:1;transform:translateY(0)}
-.back-to-top:hover{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateY(-3px)}
-.back-to-top svg{width:20px;height:20px;fill:var(--text2);transition:fill .3s}
-.back-to-top:hover svg{fill:#fff}
+    .navbar.scrolled {
+      background: var(--nav2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2)
+    }
 
-.float-wa{position:fixed;bottom:24px;right:24px;z-index:1500;width:56px;height:56px;background:linear-gradient(135deg,#25d366,#128c7e);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:all .3s;animation:waPulse 2s ease-in-out infinite;text-decoration:none}
-.float-wa:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(37,211,102,0.5)}
-.float-wa svg{width:28px;height:28px;fill:#fff}
-@keyframes waPulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)}50%{box-shadow:0 4px 20px rgba(37,211,102,0.4),0 0 0 10px rgba(37,211,102,0.1)}}
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      height: 70px
+    }
 
-.toast{position:fixed;bottom:90px;right:24px;z-index:3000;background:var(--nav);color:#fff;padding:12px 20px;border-radius:12px;font-size:13px;font-weight:500;box-shadow:0 8px 30px rgba(0,0,0,0.2);transform:translateX(120%);transition:transform .4s ease;display:flex;align-items:center;gap:8px}
-.toast.show{transform:translateX(0)}
-.toast svg{width:18px;height:18px;fill:#4ade80;flex-shrink:0}
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none
+    }
 
-@media(max-width:768px){
-  .nav-center{display:none}
-  .hamburger{display:flex}
-  .about-grid,.contact-grid{grid-template-columns:1fr}
-  .about-img{order:-1}.about-img-main{height:300px}
-  .about-img-float{bottom:-10px;right:10px;padding:12px}
-  .hero-stats{gap:16px;flex-wrap:wrap}.hero-stat-num{font-size:26px}
-  .products-grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
-  .product-img-area{height:200px}
-  .section{padding:60px 16px}
-  .cart-sidebar{width:100%;right:-100%}
-  .cart-overlay.open .cart-sidebar{right:0}
-  .contact-wa-big a{padding:14px 28px;font-size:15px}
-  .ba-container{height:300px}
-  .ba-label{font-size:10px;bottom:10px;padding:4px 14px}
-  .ba-left,.ba-right{font-size:10px;top:10px;padding:3px 10px}
-  .back-to-top{bottom:20px;left:20px;width:42px;height:42px}
-  .float-wa{bottom:20px;right:20px;width:52px;height:52px}
-  .float-wa svg{width:26px;height:26px}
-}
-@media(max-width:400px){
-  .products-grid{grid-template-columns:1fr 1fr;gap:10px}
-  .product-img-area{height:170px}
-  .product-info{padding:12px}
-  .product-name{font-size:14px}
-  .product-price{font-size:17px}
-  .product-desc{display:none}
-  .product-bottom{flex-direction:column;gap:6px;align-items:flex-start}
-  .product-add-cart{width:36px;height:36px}
-  .product-wa{width:36px;height:36px}
-  .about-features{grid-template-columns:1fr}
-  .faq-q h4{font-size:14px}
-  .qr-box img{width:120px;height:120px}
-}
-</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-12ZMC1RCHE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    .nav-logo-icon {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, var(--green), var(--green-d));
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0
+    }
 
-  gtag('config', 'G-12ZMC1RCHE');
-</script>
+    .nav-logo-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff
+    }
+
+    .nav-logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 1px;
+      line-height: 1
+    }
+
+    .nav-logo-sub {
+      font-size: 8px;
+      color: rgba(250, 240, 230, 0.5);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: block
+    }
+
+    .nav-center {
+      display: flex;
+      gap: 20px;
+      align-items: center
+    }
+
+    .nav-center a {
+      color: var(--text2);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      transition: color .3s;
+      position: relative;
+      white-space: nowrap
+    }
+
+    .nav-center a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: width .3s
+    }
+
+    .nav-center a:hover {
+      color: var(--gold)
+    }
+
+    .nav-center a:hover::after {
+      width: 100%
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .nav-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all .3s;
+      font-size: 14px
+    }
+
+    .nav-btn:hover {
+      background: var(--accent-l);
+      color: var(--accent-d);
+      border-color: var(--accent)
+    }
+
+    .nav-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor
+    }
+
+    .nav-wa {
+      background: linear-gradient(135deg, #25d366, #128c7e) !important;
+      color: #fff !important;
+      width: auto !important;
+      padding: 7px 16px !important;
+      border-radius: 50px !important;
+      font-size: 12px !important;
+      font-weight: 600 !important;
+      border: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      transition: all .3s;
+      text-decoration: none;
+    }
+
+    .nav-wa:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3)
+    }
+
+    .nav-wa svg {
+      width: 14px;
+      height: 14px;
+      fill: #fff
+    }
+
+    .nav-cart {
+      position: relative
+    }
+
+    .nav-cart .badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 18px;
+      height: 18px;
+      background: var(--accent);
+      color: var(--bg);
+      border-radius: 50%;
+      font-size: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: scale(0);
+      transition: all .3s
+    }
+
+    .nav-cart .badge.show {
+      opacity: 1;
+      transform: scale(1)
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none
+    }
+
+    .hamburger span {
+      width: 22px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: all .3s
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--nav2);
+      backdrop-filter: blur(20px);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: all .4s;
+      pointer-events: none
+    }
+
+    .mobile-menu.open {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto
+    }
+
+    .mobile-menu a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: color .3s
+    }
+
+    .mobile-menu a:hover {
+      color: var(--gold)
+    }
+
+    .mobile-menu .mob-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px
+    }
+
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #052e16 0%, #14532d 30%, #166534 60%, #15803d 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 100px 20px 60px
+    }
+
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      background-image: radial-gradient(circle at 20% 50%, #fff 1px, transparent 1px), radial-gradient(circle at 80% 20%, #fff 1px, transparent 1px);
+      background-size: 60px 60px, 80px 80px, 70px 70px
+    }
+
+    .hero-glow-1 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(34, 197, 94, 0.12), transparent 70%);
+      top: -10%;
+      right: -10%;
+      border-radius: 50%
+    }
+
+    .hero-glow-2 {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(212, 168, 67, 0.08), transparent 70%);
+      bottom: -5%;
+      left: -5%;
+      border-radius: 50%
+    }
+
+    .hero-glow-3 {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(34, 197, 94, 0.06), transparent 70%);
+      top: 40%;
+      left: 30%;
+      border-radius: 50%;
+      animation: heroFloat 8s ease-in-out infinite
+    }
+
+    @keyframes heroFloat {
+
+      0%,
+      100% {
+        transform: translate(0, 0)
+      }
+
+      50% {
+        transform: translate(30px, -30px)
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 800px;
+      animation: floating 6s ease-in-out infinite;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(251, 191, 36, .12);
+      border: 1px solid rgba(251, 191, 36, .35);
+      backdrop-filter: blur(12px);
+      border-radius: 60px;
+      padding: 10px 24px;
+      margin-bottom: 26px;
+      animation: fadeInDown .8s ease;
+    }
+
+    .hero-badge span {
+      font-size: 11px;
+      color: #fbbf24;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(42px, 7vw, 82px);
+      font-weight: 800;
+      line-height: 1.02;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-shadow: 0 8px 35px rgba(0, 0, 0, .35);
+      animation: fadeInUp .8s ease .2s both;
+    }
+
+    .hero-title .gold {
+      display: block;
+      margin-top: 8px;
+      background: linear-gradient(135deg, #fcd34d, #f59e0b, #fde68a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-desc {
+      font-size: clamp(17px, 2.2vw, 20px);
+      color: rgba(255, 255, 255, .82);
+      font-weight: 400;
+      line-height: 1.9;
+      max-width: 700px;
+      margin: 0 auto 34px;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeInUp .8s ease .6s both
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: #052e16;
+      padding: 16px 36px;
+      border-radius: 60px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all .35s ease;
+      box-shadow: 0 10px 30px rgba(251, 191, 36, .30);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 18px 45px rgba(251, 191, 36, .45);
+    }
+
+    .btn-primary svg {
+      width: 18px;
+      height: 18px;
+      fill: #052e16
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, .08);
+      backdrop-filter: blur(12px);
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 60px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, .20);
+      transition: all .35s ease;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(251, 191, 36, .12);
+      border-color: #fbbf24;
+      color: #fbbf24;
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(251, 191, 36, .20);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 36px;
+      justify-content: center;
+      margin-top: 50px;
+      animation: fadeInUp .8s ease .8s both
+    }
+
+    .hero-stat {
+      text-align: center
+    }
+
+    .hero-stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: #fbbf24
+    }
+
+    .hero-stat-label {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.45);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 4px
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes tagPulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(251, 191, 36, .30);
+      }
+
+      50% {
+        transform: scale(1.08);
+        box-shadow: 0 12px 28px rgba(251, 191, 36, .55);
+      }
+
+      100% {
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(251, 191, 36, .30);
+      }
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-6px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    .section {
+      padding: 80px 20px
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 10px
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 10px
+    }
+
+    .section-line {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(to right, var(--green), var(--gold));
+      margin: 0 auto;
+      border-radius: 2px
+    }
+
+    .section-desc {
+      font-size: 15px;
+      color: var(--text2);
+      max-width: 580px;
+      margin: 12px auto 0;
+      line-height: 1.7
+    }
+
+    .products-section {
+      background: var(--bg2)
+    }
+
+    .product-filters {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap
+    }
+
+    .filter-btn {
+      padding: 10px 24px;
+      border-radius: 50px;
+      border: 2px solid var(--border);
+      background: transparent;
+      color: var(--text2);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .3s;
+      font-family: 'Poppins', sans-serif
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      box-shadow: 0 2px 10px rgba(184, 134, 11, 0.2)
+    }
+
+    .search-bar {
+      max-width: 400px;
+      margin: 0 auto 30px;
+      position: relative
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 12px 20px 12px 46px;
+      border: 2px solid var(--border);
+      border-radius: 50px;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-card);
+      color: var(--text);
+      outline: none;
+      transition: border-color .3s
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent)
+    }
+
+    .search-bar svg {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      fill: var(--text3)
+    }
+
+    .products-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px
+    }
+
+    .product-card {
+      position: relative;
+      background: rgba(255, 255, 255, .96);
+      border: 1px solid rgba(255, 255, 255, .6);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: all .4s ease;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+      backdrop-filter: blur(12px);
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: translateY(-14px) scale(1.02);
+      box-shadow: 0 35px 70px rgba(0, 0, 0, .18);
+      border-color: #fbbf24;
+      background: linear-gradient(180deg, #ffffff, #fdfcf7);
+    }
+
+    .product-img-area {
+      height: 260px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg)
+    }
+
+    .product-img-area img {
+      width: 85%;
+      height: 85%;
+      object-fit: contain;
+      transition: transform .6s
+    }
+
+    .product-card:hover .product-img-area img {
+      transform: scale(1.12) rotate(-2deg);
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: var(--bg-card);
+      color: var(--text);
+      font-size: 9px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px var(--shadow)
+    }
+
+    .product-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: #052e16;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 50px;
+      letter-spacing: .6px;
+      box-shadow: 0 8px 20px rgba(251, 191, 36, .35);
+      animation: tagPulse 2.5s infinite;
+      z-index: 5;
+    }
+
+    .product-info {
+      padding: 20px;
+      background: linear-gradient(to bottom, #ffffff, #f9fafb);
+    }
+
+    .product-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.35;
+      transition: .3s;
+    }
+
+    .product-desc {
+      font-size: 13px;
+      color: var(--text2);
+      line-height: 1.7;
+      margin-bottom: 14px;
+      min-height: 44px;
+    }
+
+    .product-price {
+      font-size: 22px;
+      font-weight: 700;
+      color: #166534;
+    }
+
+    .product-price small {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--text3)
+    }
+
+    .product-wa {
+      width: 46px;
+      height: 46px;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: .35s;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, .30);
+      flex-shrink: 0;
+    }
+
+    .product-wa:hover {
+      transform: translateY(-4px) scale(1.08);
+      box-shadow: 0 15px 35px rgba(37, 211, 102, .45);
+    }
+
+    .product-wa svg {
+      width: 18px;
+      height: 18px;
+      fill: #fff
+    }
+
+    .product-add-cart {
+      width: 46px;
+      height: 46px;
+      background: #ecfdf5;
+      border: 2px solid #22c55e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .35s;
+      color: #166534;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .product-add-cart:hover {
+      background: #22c55e;
+      color: #fff;
+      transform: translateY(-4px) scale(1.08);
+      box-shadow: 0 12px 30px rgba(34, 197, 94, .35);
+    }
+
+    .product-add-cart svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor
+    }
+
+    .ba-section {
+      background: var(--bg)
+    }
+
+    .ba-container {
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      position: relative;
+      height: 400px;
+      background: var(--bg-card)
+    }
+
+    .ba-slider {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      overflow: hidden
+    }
+
+    .ba-before,
+    .ba-after {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0
+    }
+
+    .ba-divider {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background: #fff;
+      transform: translateX(-50%);
+      cursor: ew-resize;
+      z-index: 2;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+    }
+
+    .ba-label {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 6px 20px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      backdrop-filter: blur(4px);
+      white-space: nowrap
+    }
+
+    .ba-label span {
+      color: var(--gold)
+    }
+
+    .ba-left {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 3;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 4px 14px;
+      border-radius: 50%;
+      font-size: 11px;
+      backdrop-filter: blur(4px)
+    }
+
+    .ba-right {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      z-index: 3;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 4px 14px;
+      border-radius: 50%;
+      font-size: 11px;
+      backdrop-filter: blur(4px)
+    }
+
+    .about-section {
+      background: var(--bg2)
+    }
+
+    .about-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center
+    }
+
+    .about-img {
+      position: relative
+    }
+
+    .about-img-main {
+      width: 100%;
+      height: 420px;
+      border-radius: var(--radius);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+      background: #000;
+      border: none;
+    }
+
+    .about-img-float {
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .about-img-float-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--green), var(--green-d));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0
+    }
+
+    .about-img-float-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: #fff
+    }
+
+    .about-img-float-text {
+      font-size: 12px;
+      color: var(--text3);
+      line-height: 1.3
+    }
+
+    .about-img-float-text strong {
+      display: block;
+      color: var(--text);
+      font-size: 14px
+    }
+
+    .about-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px
+    }
+
+    .about-sub {
+      font-size: 13px;
+      color: var(--green);
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px
+    }
+
+    .about-text p {
+      font-size: 15px;
+      color: var(--text2);
+      line-height: 1.8;
+      margin-bottom: 12px
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px
+    }
+
+    .about-feat {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text);
+      font-weight: 500
+    }
+
+    .about-feat-icon {
+      width: 28px;
+      height: 28px;
+      background: rgba(92, 138, 77, 0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0
+    }
+
+    .about-feat-icon svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--green)
+    }
+
+    .whyus-section {
+      background: linear-gradient(135deg, #052e16 0%, #14532d 50%, #166534 100%);
+      color: #fff
+    }
+
+    .whyus-section .section-label {
+      color: #4ade80
+    }
+
+    .whyus-section .section-title {
+      color: #fff
+    }
+
+    .whyus-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px
+    }
+
+    .whyus-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius);
+      padding: 28px 20px;
+      text-align: center;
+      transition: all .4s;
+      backdrop-filter: blur(10px)
+    }
+
+    .whyus-card:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-5px);
+      border-color: rgba(251, 191, 36, 0.3)
+    }
+
+    .whyus-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(34, 197, 94, 0.15));
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+      border: 1px solid rgba(251, 191, 36, 0.2)
+    }
+
+    .whyus-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: #fbbf24
+    }
+
+    .whyus-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #fbbf24
+    }
+
+    .whyus-card p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.6
+    }
+
+    .reviews-section {
+      background: var(--bg)
+    }
+
+    .slider-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      padding: 0 10px;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform .5s ease
+    }
+
+    .slider-card {
+      min-width: 100%;
+      padding: 0 10px;
+      flex-shrink: 0;
+      box-sizing: border-box
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      position: relative
+    }
+
+    .review-card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 70px;
+      color: rgba(34, 197, 94, 0.08);
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      line-height: 1
+    }
+
+    .review-stars {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 10px
+    }
+
+    .review-stars svg {
+      width: 16px;
+      height: 16px;
+      fill: #fbbf24
+    }
+
+    .review-text {
+      font-size: 14px;
+      color: var(--text2);
+      line-height: 1.7;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .review-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #fff;
+      font-size: 15px
+    }
+
+    .review-name {
+      font-weight: 600;
+      color: var(--text);
+      font-size: 14px
+    }
+
+    .review-date {
+      font-size: 11px;
+      color: var(--text3)
+    }
+
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 20px
+    }
+
+    .slider-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: all .3s
+    }
+
+    .slider-dot.active {
+      background: var(--gold);
+      transform: scale(1.2)
+    }
+
+    .slider-arrows {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 4px;
+      pointer-events: none;
+      z-index: 5;
+      transform: translateY(-50%);
+      box-sizing: border-box
+    }
+
+    .slider-arrow {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      pointer-events: auto;
+      transition: all .3s;
+      color: var(--text2);
+      border: 1px solid var(--border);
+      font-size: 16px
+    }
+
+    .slider-arrow:hover {
+      background: var(--accent-l);
+      color: var(--accent-d);
+      border-color: var(--accent)
+    }
+
+    .review-form-btn {
+      display: block;
+      margin: 30px auto 0;
+      background: linear-gradient(135deg, var(--green), var(--green-d));
+      color: #fff;
+      border: none;
+      padding: 12px 32px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .3s;
+      box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3)
+    }
+
+    .review-form-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4)
+    }
+
+    .faq-section {
+      background: var(--bg2)
+    }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: box-shadow .3s
+    }
+
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 22px;
+      cursor: pointer;
+      gap: 14px
+    }
+
+    .faq-q h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.5;
+      flex: 1
+    }
+
+    .faq-icon {
+      width: 28px;
+      height: 28px;
+      background: rgba(34, 197, 94, 0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all .3s
+    }
+
+    .faq-icon svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--green);
+      transition: all .3s
+    }
+
+    .faq-item.open .faq-icon {
+      background: var(--green)
+    }
+
+    .faq-item.open .faq-icon svg {
+      fill: #fff;
+      transform: rotate(45deg)
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease, padding .4s ease
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 300px;
+      padding: 0 22px 18px
+    }
+
+    .faq-a p {
+      font-size: 13px;
+      color: var(--text2);
+      line-height: 1.7
+    }
+
+    .contact-section {
+      background: linear-gradient(135deg, #022c22 0%, #052e16 50%, #14532d 100%);
+      color: #fff
+    }
+
+    .contact-section .section-label {
+      color: #4ade80
+    }
+
+    .contact-section .section-title {
+      color: #fff
+    }
+
+    .contact-section .section-desc {
+      color: rgba(255, 255, 255, 0.6)
+    }
+
+    .contact-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius);
+      padding: 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: all .3s;
+      backdrop-filter: blur(10px);
+      text-decoration: none;
+      color: inherit
+    }
+
+    .contact-card:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(251, 191, 36, 0.2)
+    }
+
+    .contact-card-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(34, 197, 94, 0.1));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(251, 191, 36, 0.2)
+    }
+
+    .contact-card-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #fbbf24
+    }
+
+    .contact-card h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fbbf24;
+      margin-bottom: 3px
+    }
+
+    .contact-card p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.6
+    }
+
+    .contact-wa-big {
+      grid-column: 1/-1;
+      text-align: center;
+      margin-top: 8px
+    }
+
+    .contact-wa-big a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      padding: 16px 40px;
+      border-radius: 50px;
+      font-size: 17px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all .3s;
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3)
+    }
+
+    .contact-wa-big a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(37, 211, 102, 0.4)
+    }
+
+    .contact-wa-big a svg {
+      width: 22px;
+      height: 22px;
+      fill: #fff
+    }
+
+    .contact-note {
+      text-align: center;
+      margin-top: 12px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.35)
+    }
+
+    .qr-area {
+      grid-column: 1/-1;
+      display: flex;
+      justify-content: center;
+      margin-top: 8px
+    }
+
+    .qr-box {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12)
+    }
+
+    .qr-box p {
+      font-size: 11px;
+      color: var(--text3);
+      margin-top: 8px;
+      font-weight: 500
+    }
+
+    .qr-box img {
+      width: 140px;
+      height: 140px;
+      border-radius: 10px;
+      object-fit: contain
+    }
+
+    .easypaisa-info {
+      grid-column: 1/-1;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 12px;
+      flex-wrap: wrap
+    }
+
+    .easypaisa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #1a6b3c, #0d4f2d);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all .3s;
+      box-shadow: 0 4px 15px rgba(26, 107, 60, 0.3)
+    }
+
+    .easypaisa-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(26, 107, 60, 0.4)
+    }
+
+    .easypaisa-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: #fff
+    }
+
+    .footer {
+      background: #011a10;
+      padding: 36px 20px 16px;
+      color: rgba(255, 255, 255, 0.45);
+      text-align: center
+    }
+
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #fbbf24;
+      margin-bottom: 6px
+    }
+
+    .footer p {
+      font-size: 12px;
+      line-height: 1.7
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin: 14px 0;
+      flex-wrap: wrap
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.45);
+      text-decoration: none;
+      font-size: 12px;
+      transition: color .3s
+    }
+
+    .footer-links a:hover {
+      color: #fbbf24
+    }
+
+    .footer-copy {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 11px
+    }
+
+    .cart-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 2000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s
+    }
+
+    .cart-overlay.open {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    .cart-sidebar {
+      position: fixed;
+      top: 0;
+      right: -400px;
+      width: 380px;
+      height: 100%;
+      background: var(--bg-card);
+      z-index: 2001;
+      transition: right .4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: -8px 0 30px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden
+    }
+
+    .cart-overlay.open .cart-sidebar {
+      right: 0
+    }
+
+    .cart-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      border-bottom: 1px solid var(--border)
+    }
+
+    .cart-header h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: var(--text)
+    }
+
+    .cart-close {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      background: var(--bg2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: var(--text2);
+      transition: all .3s
+    }
+
+    .cart-close:hover {
+      background: var(--border)
+    }
+
+    .cart-items {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px
+    }
+
+    .cart-item {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border)
+    }
+
+    .cart-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: var(--bg)
+    }
+
+    .cart-item-info {
+      flex: 1;
+      min-width: 0
+    }
+
+    .cart-item-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 2px
+    }
+
+    .cart-item-price {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--green)
+    }
+
+    .cart-item-qty {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 4px
+    }
+
+    .qty-btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s
+    }
+
+    .qty-btn:hover {
+      background: var(--accent-l);
+      border-color: var(--accent);
+      color: var(--accent-d)
+    }
+
+    .cart-item-remove {
+      background: none;
+      border: none;
+      color: var(--text3);
+      cursor: pointer;
+      font-size: 14px;
+      padding: 4px;
+      transition: color .3s;
+      line-height: 1;
+      margin-top: 6px;
+      display: block
+    }
+
+    .cart-item-remove:hover {
+      color: #e74c3c
+    }
+
+    .cart-footer {
+      padding: 16px 20px;
+      border-top: 1px solid var(--border)
+    }
+
+    .cart-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px
+    }
+
+    .cart-total-label {
+      font-size: 14px;
+      color: var(--text2)
+    }
+
+    .cart-total-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--gold)
+    }
+
+    .cart-checkout {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .3s;
+      margin-bottom: 8px
+    }
+
+    .cart-checkout.cash {
+      background: linear-gradient(135deg, var(--green), var(--green-d));
+      color: #fff
+    }
+
+    .cart-checkout.easypaisa {
+      background: linear-gradient(135deg, #1a6b3c, #0d4f2d);
+      color: #fff
+    }
+
+    .cart-checkout:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15)
+    }
+
+    .cart-empty {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text3);
+      font-size: 14px
+    }
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+      z-index: 3000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px
+    }
+
+    .modal-overlay.open {
+      display: flex
+    }
+
+    .modal {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      padding: 32px;
+      max-width: 460px;
+      width: 100%;
+      position: relative;
+      animation: modalIn .3s ease;
+      max-height: 90vh;
+      overflow-y: auto
+    }
+
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px)
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0)
+      }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      background: var(--bg2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: var(--text2);
+      transition: background .3s
+    }
+
+    .modal-close:hover {
+      background: var(--border)
+    }
+
+    .modal h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--text);
+      margin-bottom: 16px
+    }
+
+    .form-group {
+      margin-bottom: 14px
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text2);
+      margin-bottom: 5px;
+      letter-spacing: 0.5px
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 10px 14px;
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      outline: none;
+      transition: border-color .3s
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--green)
+    }
+
+    .form-group textarea {
+      height: 80px;
+      resize: vertical
+    }
+
+    .star-select {
+      display: flex;
+      gap: 6px
+    }
+
+    .star-select button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 2px;
+      transition: transform .2s
+    }
+
+    .star-select button:hover {
+      transform: scale(1.2)
+    }
+
+    .star-select button svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--border);
+      transition: fill .2s
+    }
+
+    .star-select button.active svg {
+      fill: #fbbf24
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(135deg, var(--green), var(--green-d));
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .3s;
+      margin-top: 6px
+    }
+
+    .form-submit:hover {
+      box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
+      transform: translateY(-1px)
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      z-index: 1500;
+      width: 46px;
+      height: 46px;
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all .3s;
+      opacity: 0;
+      transform: translateY(20px);
+      box-shadow: var(--shadow)
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .back-to-top:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      transform: translateY(-3px)
+    }
+
+    .back-to-top svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--text2);
+      transition: fill .3s
+    }
+
+    .back-to-top:hover svg {
+      fill: #fff
+    }
+
+    .float-wa {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1500;
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      transition: all .3s;
+      animation: waPulse 2s ease-in-out infinite;
+      text-decoration: none
+    }
+
+    .float-wa:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5)
+    }
+
+    .float-wa svg {
+      width: 28px;
+      height: 28px;
+      fill: #fff
+    }
+
+    @keyframes waPulse {
+
+      0%,
+      100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4)
+      }
+
+      50% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4), 0 0 0 10px rgba(37, 211, 102, 0.1)
+      }
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 90px;
+      right: 24px;
+      z-index: 3000;
+      background: var(--nav);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 500;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      transform: translateX(120%);
+      transition: transform .4s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .toast.show {
+      transform: translateX(0)
+    }
+
+    .toast svg {
+      width: 18px;
+      height: 18px;
+      fill: #4ade80;
+      flex-shrink: 0
+    }
+
+    @media(max-width:768px) {
+      .nav-center {
+        display: none
+      }
+
+      .hamburger {
+        display: flex
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr
+      }
+
+      .about-img {
+        order: -1
+      }
+
+      .about-img-main {
+        height: 300px
+      }
+
+      .about-img-float {
+        bottom: -10px;
+        right: 10px;
+        padding: 12px
+      }
+
+      .hero-stats {
+        gap: 16px;
+        flex-wrap: wrap
+      }
+
+      .hero-stat-num {
+        font-size: 26px
+      }
+
+      .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 14px
+      }
+
+      .product-img-area {
+        height: 200px
+      }
+
+      .section {
+        padding: 60px 16px
+      }
+
+      .cart-sidebar {
+        width: 100%;
+        right: -100%
+      }
+
+      .cart-overlay.open .cart-sidebar {
+        right: 0
+      }
+
+      .contact-wa-big a {
+        padding: 14px 28px;
+        font-size: 15px
+      }
+
+      .ba-container {
+        height: 300px
+      }
+
+      .ba-label {
+        font-size: 10px;
+        bottom: 10px;
+        padding: 4px 14px
+      }
+
+      .ba-left,
+      .ba-right {
+        font-size: 10px;
+        top: 10px;
+        padding: 3px 10px
+      }
+
+      .back-to-top {
+        bottom: 20px;
+        left: 20px;
+        width: 42px;
+        height: 42px
+      }
+
+      .float-wa {
+        bottom: 20px;
+        right: 20px;
+        width: 52px;
+        height: 52px
+      }
+
+      .float-wa svg {
+        width: 26px;
+        height: 26px
+      }
+    }
+
+    @media(max-width:400px) {
+      .products-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px
+      }
+
+      .product-img-area {
+        height: 170px
+      }
+
+      .product-info {
+        padding: 12px
+      }
+
+      .product-name {
+        font-size: 14px
+      }
+
+      .product-price {
+        font-size: 17px
+      }
+
+      .product-desc {
+        display: none
+      }
+
+      .product-bottom {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-start
+      }
+
+      .product-add-cart {
+        width: 36px;
+        height: 36px
+      }
+
+      .product-wa {
+        width: 36px;
+        height: 36px
+      }
+
+      .about-features {
+        grid-template-columns: 1fr
+      }
+
+      .faq-q h4 {
+        font-size: 14px
+      }
+
+      .qr-box img {
+        width: 120px;
+        height: 120px
+      }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-12ZMC1RCHE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-12ZMC1RCHE');
+  </script>
 
 </head>
+
 <body>
 
-<div class="loader" id="loader">
-  <div class="loader-brand">GREEN ROOTS</div>
-  <div class="loader-sub">Herbal Oils & Shampoo</div>
-  <div class="loader-bar"></div>
-</div>
-
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="#" class="nav-logo">
-      <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg></div>
-      <div><div class="nav-logo-text">Green Roots</div><span class="nav-logo-sub">Herbal Oils & Shampoo</span></div>
-    </a>
-    <div class="nav-center" id="navLinks">
-      <a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
-    </div>
-    <div class="nav-right">
-      <button class="nav-btn" id="themeToggle" title="Toggle Dark/Light" onclick="toggleTheme()"><svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg></button>
-      <button class="nav-btn" id="langToggle" title="English/اردو" onclick="toggleLang()"><span id="langLabel">اردو</span></button>
-      <button class="nav-btn nav-cart" id="cartToggle" onclick="toggleCart()">
-        <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
-        <span class="badge" id="cartBadge">0</span>
-      </button>
-      <a href="https://wa.me/c/923199088670" target="_blank" class="nav-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg> Catalog</a>
-      <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
-    </div>
+  <div class="loader" id="loader">
+    <div class="loader-brand">GREEN ROOTS</div>
+    <div class="loader-sub">Herbal Oils & Shampoo</div>
+    <div class="loader-bar"></div>
   </div>
-</nav>
 
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#home" onclick="toggleMenu()">Home</a><a href="#products" onclick="toggleMenu()">Products</a><a href="#about" onclick="toggleMenu()">About</a><a href="#reviews" onclick="toggleMenu()">Reviews</a><a href="#faq" onclick="toggleMenu()">FAQ</a><a href="#contact" onclick="toggleMenu()">Contact</a>
-  <div class="mob-actions">
-    <button class="nav-btn" onclick="toggleTheme()"><svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg></button>
-    <button class="nav-btn" onclick="toggleLang()"><span class="mob-lang">اردو</span></button>
-  </div>
-</div>
-
-<section class="hero" id="home">
-  <div class="hero-pattern"></div><div class="hero-glow-1"></div><div class="hero-glow-2"></div><div class="hero-glow-3"></div>
-  <div class="hero-content">
- <div class="hero-badge"><span>🌿 Come On, Hair Lovers!</span></div>
-   <h1 class="hero-title">
-Healthy Hair Begins
-<span class="gold">with Nature</span>
-</h1>
-    <p class="hero-desc">
-Premium herbal hair care made with carefully selected natural ingredients to nourish your scalp, reduce hair fall, and support naturally healthy, strong and shiny hair.
-</p>
-    <div class="hero-btns">
-      <a href="https://wa.me/c/923199088670" target="_blank" class="btn-primary"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg> WhatsApp Order</a>
-      <a href="#products" class="btn-secondary">Shop Collection →</a>
-    </div>
-   <div class="hero-stats">
-    <div class="hero-stat">
-        <div class="hero-stat-num">11</div>
-        <div class="hero-stat-label">Products</div>
-    </div>
-
-    <div class="hero-stat">
-        <div class="hero-stat-num">100%</div>
-        <div class="hero-stat-label">Natural</div>
-    </div>
-
-    <div class="hero-stat">
-        <div class="hero-stat-num">Made</div>
-        <div class="hero-stat-label">In Pakistan 🇵🇰</div>
-    </div>
-</div>
-  </div>
-</section>
-
-<section class="section products-section" id="products">
-  <div class="section-header"><div class="section-label">Our Collection</div><h2 class="section-title">Premium Herbal Products</h2><div class="section-line"></div><p class="section-desc">Each product is 100% cold pressed, fully organic and crafted with the finest natural ingredients.</p></div>
-  <div class="product-filters" id="productFilters">
-    <button class="filter-btn active" data-filter="all">All Products</button>
-    <button class="filter-btn" data-filter="oils">🫒 Oils</button>
-    <button class="filter-btn" data-filter="shampoo">🧴 Shampoo</button>
-    <button class="filter-btn" data-filter="budget">💰 Budget Friendly</button>
-  </div>
-  <div class="search-bar">
-    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-    <input type="text" id="searchInput" placeholder="Search products..." oninput="searchProducts(this.value)" />
-  </div>
-  <div class="products-grid" id="productsGrid"></div>
-</section>
-
-<section class="section ba-section" id="beforeAfter">
-  <div class="section-header"><div class="section-label">Real Results</div><h2 class="section-title">See The Difference</h2><div class="section-line"></div></div>
-  <div class="ba-container">
-    <div class="ba-slider">
-      <img src="https://picsum.photos/seed/damaged-hair/400/500.jpg" alt="Before" class="ba-before" />
-      <img src="https://picsum.photos/seed/shiny-healthy-hair/400/500.jpg" alt="After" class="ba-after" />
-    </div>
-    <div class="ba-divider"></div>
-    <div class="ba-label">← Before &nbsp;<span>After →</span></div>
-    <div class="ba-left">BEFORE</div>
-    <div class="ba-right">AFTER</div>
-  </div>
-</section>
-
-<!-- ABOUT SECTION WITH VIDEO -->
-<section class="section about-section" id="about">
-  <div class="about-grid">
-    <div class="about-img">
-      <!-- Google Drive Video Embed -->
-      <iframe class="about-img-main" src="https://drive.google.com/file/d/1r7BpanieyO4hZfcYMtDA59tZwkTDOD3I/preview" allow="autoplay" allowfullscreen></iframe>
-      <div class="about-img-float">
-        <div class="about-img-float-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S7.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
-        <div class="about-img-float-text"><strong>100% Organic</strong>Cold Pressed Oils</div>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon"><svg viewBox="0 0 24 24">
+            <path
+              d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z" />
+          </svg></div>
+        <div>
+          <div class="nav-logo-text">Green Roots</div><span class="nav-logo-sub">Herbal Oils & Shampoo</span>
+        </div>
+      </a>
+      <div class="nav-center" id="navLinks">
+        <a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a
+          href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-btn" id="themeToggle" title="Toggle Dark/Light" onclick="toggleTheme()"><svg
+            viewBox="0 0 24 24">
+            <path
+              d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" />
+          </svg></button>
+        <button class="nav-btn" id="langToggle" title="English/اردو" onclick="toggleLang()"><span
+            id="langLabel">اردو</span></button>
+        <button class="nav-btn nav-cart" id="cartToggle" onclick="toggleCart()">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+          </svg>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+        <a href="https://wa.me/c/923199088670" target="_blank" class="nav-wa"><svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          </svg> Catalog</a>
+        <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
       </div>
     </div>
-    <div class="about-text">
-      <div class="about-sub">Our Journey</div>
-      <h2>Every Great Hair Journey<br>Starts With Nature</h2>
-      <p>
-I have always believed that healthy hair brings confidence. My love for natural hair care inspired me to create Green Roots—a brand dedicated to helping every hair lover enjoy stronger, healthier and naturally beautiful hair through carefully selected herbal ingredients.
-</p>
-      <p>
-Every product is prepared with care, honesty and respect for nature. Our mission is simple: provide high-quality herbal hair care that families across Pakistan can trust as part of their daily hair care routine.
-</p>
-      <div class="about-features">
-        <div class="about-feat"><div class="about-feat-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>100% Cold Pressed</div>
-        <div class="about-feat"><div class="about-feat-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Fully Organic</div>
-        <div class="about-feat"><div class="about-feat-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>No Chemicals</div>
-        <div class="about-feat"><div class="about-feat-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Handcrafted</div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="toggleMenu()">Home</a><a href="#products" onclick="toggleMenu()">Products</a><a
+      href="#about" onclick="toggleMenu()">About</a><a href="#reviews" onclick="toggleMenu()">Reviews</a><a href="#faq"
+      onclick="toggleMenu()">FAQ</a><a href="#contact" onclick="toggleMenu()">Contact</a>
+    <div class="mob-actions">
+      <button class="nav-btn" onclick="toggleTheme()"><svg viewBox="0 0 24 24">
+          <path
+            d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" />
+        </svg></button>
+      <button class="nav-btn" onclick="toggleLang()"><span class="mob-lang">اردو</span></button>
+    </div>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-pattern"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-glow-3"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><span>🌿 Come On, Hair Lovers!</span></div>
+      <h1 class="hero-title">
+        Healthy Hair Begins
+        <span class="gold">with Nature</span>
+      </h1>
+      <p class="hero-desc">
+        Premium herbal hair care made with carefully selected natural ingredients to nourish your scalp, reduce hair
+        fall, and support naturally healthy, strong and shiny hair.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/c/923199088670" target="_blank" class="btn-primary"><svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          </svg> WhatsApp Order</a>
+        <a href="#products" class="btn-secondary">Shop Collection →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">11</div>
+          <div class="hero-stat-label">Products</div>
+        </div>
+
+        <div class="hero-stat">
+          <div class="hero-stat-num">100%</div>
+          <div class="hero-stat-label">Natural</div>
+        </div>
+
+        <div class="hero-stat">
+          <div class="hero-stat-num">Made</div>
+          <div class="hero-stat-label">In Pakistan 🇵🇰</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section products-section" id="products">
+    <div class="section-header">
+      <div class="section-label">Our Collection</div>
+      <h2 class="section-title">Premium Herbal Products</h2>
+      <div class="section-line"></div>
+      <p class="section-desc">Each product is 100% cold pressed, fully organic and crafted with the finest natural
+        ingredients.</p>
+    </div>
+    <div class="product-filters" id="productFilters">
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="oils">🫒 Oils</button>
+      <button class="filter-btn" data-filter="shampoo">🧴 Shampoo</button>
+      <button class="filter-btn" data-filter="budget">💰 Budget Friendly</button>
+    </div>
+    <div class="search-bar">
+      <svg viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+      </svg>
+      <input type="text" id="searchInput" placeholder="Search products..." oninput="searchProducts(this.value)" />
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <section class="section ba-section" id="beforeAfter">
+    <div class="section-header">
+      <div class="section-label">Real Results</div>
+      <h2 class="section-title">See The Difference</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="ba-container">
+      <div class="ba-slider">
+        <img src="https://picsum.photos/seed/damaged-hair/400/500.jpg" alt="Before" class="ba-before" />
+        <img src="https://picsum.photos/seed/shiny-healthy-hair/400/500.jpg" alt="After" class="ba-after" />
+      </div>
+      <div class="ba-divider"></div>
+      <div class="ba-label">← Before &nbsp;<span>After →</span></div>
+      <div class="ba-left">BEFORE</div>
+      <div class="ba-right">AFTER</div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION WITH VIDEO -->
+  <section class="section about-section" id="about">
+    <div class="about-grid">
+      <div class="about-img">
+        <!-- Google Drive Video Embed -->
+        <iframe class="about-img-main" src="https://drive.google.com/file/d/1r7BpanieyO4hZfcYMtDA59tZwkTDOD3I/preview"
+          allow="autoplay" allowfullscreen></iframe>
+        <div class="about-img-float">
+          <div class="about-img-float-icon"><svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S7.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+            </svg></div>
+          <div class="about-img-float-text"><strong>100% Organic</strong>Cold Pressed Oils</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="about-sub">Our Journey</div>
+        <h2>Every Great Hair Journey<br>Starts With Nature</h2>
+        <p>
+          I have always believed that healthy hair brings confidence. My love for natural hair care inspired me to
+          create Green Roots—a brand dedicated to helping every hair lover enjoy stronger, healthier and naturally
+          beautiful hair through carefully selected herbal ingredients.
+        </p>
+        <p>
+          Every product is prepared with care, honesty and respect for nature. Our mission is simple: provide
+          high-quality herbal hair care that families across Pakistan can trust as part of their daily hair care
+          routine.
+        </p>
+        <div class="about-features">
+          <div class="about-feat">
+            <div class="about-feat-icon"><svg viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+              </svg></div>100% Cold Pressed
+          </div>
+          <div class="about-feat">
+            <div class="about-feat-icon"><svg viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+              </svg></div>Fully Organic
+          </div>
+          <div class="about-feat">
+            <div class="about-feat-icon"><svg viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+              </svg></div>No Chemicals
+          </div>
+          <div class="about-feat">
+            <div class="about-feat-icon"><svg viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+              </svg></div>Handcrafted
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section whyus-section" id="whyus">
+    <div class="section-header">
+      <div class="section-label">Why Green Roots</div>
+      <h2 class="section-title">Why People Trust Us</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="whyus-grid">
+      <div class="whyus-card">
+        <div class="whyus-icon"><svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+          </svg></div>
+        <h3>100% Cold Pressed</h3>
+        <p>No heat processing — all nutrients preserved naturally</p>
+      </div>
+      <div class="whyus-card">
+        <div class="whyus-icon"><svg viewBox="0 0 24 24">
+            <path
+              d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z" />
+          </svg></div>
+        <h3>Fully Organic</h3>
+        <p>Pure herbal ingredients — zero chemicals</p>
+      </div>
+      <div class="whyus-card">
+        <div class="whyus-icon"><svg viewBox="0 0 24 24">
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg></div>
+        <h3>Made With Love</h3>
+        <p>Every bottle handcrafted with passion</p>
+      </div>
+      <div class="whyus-card">
+        <div class="whyus-icon"><svg viewBox="0 0 24 24">
+            <path
+              d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.4 2.5.84 3 1.5 3 2.5 0 .71-.5 1.85-2.7 1.85-2.06 0-2.87-.92-3-2.1h-2.2c.12 2.19 1.76 3.42 3.7 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+          </svg></div>
+        <h3>Affordable Prices</h3>
+        <p>Premium quality, affordable for all</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reviews-section" id="reviews">
+    <div class="section-header">
+      <div class="section-label">Customer Love</div>
+      <h2 class="section-title">What People Say</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="slider-wrapper">
+      <div class="slider-track" id="sliderTrack"></div>
+      <div class="slider-arrows">
+        <button class="slider-arrow" onclick="slideDir(-1)">‹</button>
+        <button class="slider-arrow" onclick="slideDir(1)">›</button>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+    <button class="review-form-btn" onclick="openModal('reviewModal')">✍️ Write a Review</button>
+  </section>
+
+  <section class="section faq-section" id="faq">
+    <div class="section-header">
+      <div class="section-label">Questions?</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="section-header">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Order Now</h2>
+      <div class="section-line"></div>
+      <p class="section-desc">Ready to experience the power of nature? Place your order now!</p>
+    </div>
+    <div class="contact-grid">
+      <a href="https://wa.me/923199088670" target="_blank" class="contact-card">
+        <div class="contact-card-icon"><svg viewBox="0 0 24 24">
+            <path
+              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+          </svg></div>
+        <div>
+          <h4>Call / WhatsApp</h4>
+          <p>0319-9088670</p>
+        </div>
+      </a>
+      <div class="contact-card">
+        <div class="contact-card-icon"><svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+          </svg></div>
+        <div>
+          <h4>Delivery Area</h4>
+          <p>Local Area — Cash on Delivery</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon"><svg viewBox="0 0 24 24">
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4 1.79-4 4 4 4 4 1.79 4 4-1.12 2.5-2.5 2.5z" />
+          </svg></div>
+        <div>
+          <h4>Business Owner</h4>
+          <p>Tanvir Qureshi</p>
+        </div>
+      </div>
+      <a href="https://wa.me/c/923199088670" target="_blank" class="contact-card">
+        <div class="contact-card-icon"><svg viewBox="0 0 24 24">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z" />
+          </svg></div>
+        <div>
+          <h4>WhatsApp Catalog</h4>
+          <p>View all products</p>
+        </div>
+      </a>
+      <div class="contact-wa-big"><a
+          href="https://wa.me/923199088670?text=Hi!%20I%20want%20to%20order%20Green%20Roots%20products"
+          target="_blank"><svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          </svg> 📱 Order on WhatsApp</a>
+        <p class="contact-note">Local Area Delivery • Cash on Delivery • No Advance Payment</p>
+      </div>
+      <div class="easypaisa-info">
+        <p style="font-size:13px;color:rgba(255,255,255,0.4);text-align:center;margin-bottom:8px">Or pay via</p>
+        <a href="easypaisa://" class="easypaisa-btn"><svg viewBox="0 0 24 24">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2z" />
+          </svg> Pay with Easypaisa</a>
+      </div>
+      <div class="qr-area">
+        <div class="qr-box"><img src="https://i.postimg.cc/MKqww4Gv/QR-CODE.png" alt="Green Roots QR Code" />
+          <p>Scan to open WhatsApp</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand">Green Roots</div>
+    <p>Herbal Oils & Herbal Shampoo — 100% Cold Pressed, Fully Organic</p>
+    <div class="footer-links"><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a
+        href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+    <div class="footer-copy">© 2025 Green Roots — By Tanvir Qureshi. All Rights Reserved.</div>
+  </footer>
+
+  <a href="https://wa.me/923199088670?text=Hi!%20I%20want%20to%20order%20Green%20Roots%20products" target="_blank"
+    class="float-wa"><svg viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+    </svg></a>
+
+  <div class="back-to-top" id="backToTop" onclick="scrollToTop()">
+    <svg viewBox="0 0 24 24">
+      <path d="M15 20l-5-5 1.41-1.41L15 26 7.59-7.59L23 13l-1.41-1.41z" />
+    </svg>
+  </div>
+
+  <div class="toast" id="toast"><svg viewBox="0 0 24 24">
+      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+    </svg><span id="toastText"></span></div>
+
+  <div class="modal-overlay" id="reviewModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('reviewModal')">✕</button>
+      <h3>✍️ Write Your Review</h3>
+      <div class="form-group"><label>Your Name</label><input type="text" id="reviewName"
+          placeholder="Enter your name" /></div>
+      <div class="form-group"><label>Rating</label>
+        <div class="star-select" id="starSelect"><button onclick="setRating(1)"><svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg></button><button onclick="setRating(2)"><svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg></button><button onclick="setRating(3)"><svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg></button><button onclick="setRating(4)"><svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg></button><button onclick="setRating(5)"><svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg></button></div>
+      </div>
+      <div class="form-group"><label>Your Review</label><textarea id="reviewText"
+          placeholder="Share your experience..."></textarea></div>
+      <button class="form-submit" onclick="submitReview()">Submit Review ✅</button>
+    </div>
+  </div>
+
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()">
+    <div class="cart-sidebar" onclick="event.stopPropagation()">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close" onclick="toggleCart()">✕</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span class="cart-total-label">Total:</span>
+          <span class="cart-total-price" id="cart-total-price">Rs.0</span>
+        </div>
+        <button class="cart-checkout cash" onclick="checkout('COD')">Checkout (Cash on Delivery)</button>
+        <button class="cart-checkout easypaisa" onclick="checkout('Easypaisa')">Checkout (Easypaisa)</button>
       </div>
     </div>
   </div>
-</section>
 
-<section class="section whyus-section" id="whyus">
-  <div class="section-header"><div class="section-label">Why Green Roots</div><h2 class="section-title">Why People Trust Us</h2><div class="section-line"></div></div>
-  <div class="whyus-grid">
-    <div class="whyus-card"><div class="whyus-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div><h3>100% Cold Pressed</h3><p>No heat processing — all nutrients preserved naturally</p></div>
-    <div class="whyus-card"><div class="whyus-icon"><svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg></div><h3>Fully Organic</h3><p>Pure herbal ingredients — zero chemicals</p></div>
-    <div class="whyus-card"><div class="whyus-icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div><h3>Made With Love</h3><p>Every bottle handcrafted with passion</p></div>
-    <div class="whyus-card"><div class="whyus-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.4 2.5.84 3 1.5 3 2.5 0 .71-.5 1.85-2.7 1.85-2.06 0-2.87-.92-3-2.1h-2.2c.12 2.19 1.76 3.42 3.7 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div><h3>Affordable Prices</h3><p>Premium quality, affordable for all</p></div>
-  </div>
-</section>
+  <script>
+    const DEFAULT_PRODUCTS = [
+      { id: 1, name: "Kids Hair Oil", price: 1000, cat: "oils", img: "https://i.postimg.cc/BZx3dsJK/kid-oil.png", desc: "Gentle & safe formula for children's delicate hair", tag: "👶 Kids Safe" },
+      { id: 2, name: "White Hair Dark Oil", price: 800, cat: "oils", img: "https://i.postimg.cc/SNk445KG/white-hair-dark-oil.png", desc: "Naturally darken white & grey hair with herbs", tag: "Bestseller" },
+      { id: 3, name: "Fast Hair Growth Oil", price: 800, cat: "oils", img: "https://i.postimg.cc/J0cWJ3p3/fast-hair-growth.png", desc: "Accelerate hair growth naturally", tag: "" },
+      { id: 4, name: "Anti Hair Fall Oil", price: 1000, cat: "oils", img: "https://i.postimg.cc/dQ8Fzvwb/anti-fall-hair-oil.png", desc: "Stop hair fall & strengthen roots", tag: "Popular" },
+      { id: 5, name: "Root Strength Oil", price: 1000, cat: "oils", img: "https://i.postimg.cc/gkmpp50s/ROOT-STRENGTH-oil.png", desc: "Deep root nourishment for stronger hair", tag: "" },
+      { id: 6, name: "Cooling Herbal Oil", price: 1000, cat: "oils", img: "https://i.postimg.cc/T2rxZGT8/cooling-hair-oil.png", desc: "Refreshing cooling for scalp relaxation" },
+      { id: 7, name: "Non-Sticky Luxury Oil", price: 1000, cat: "oils", img: "https://i.postimg.cc/fTDssFbL/non-sticky-oil.png", desc: "Lightweight non-sticky premium oil", tag: "Luxury" },
+      { id: 8, name: "Strong & Shine Oil", price: 1000, cat: "oils", img: "https://i.postimg.cc/GhdRRNpg/strong-shine-oil.png", desc: "Premium shine & smoothness for beautiful hair", badge: "★ Featured" },
+      { id: 9, name: "Herbal Shampoo", price: 800, cat: "shampoo", img: "https://i.postimg.cc/05pvLx9x/herbal-shampoo.png", desc: "Gentle herbal cleansing", tag: "Shampoo" },
+      { id: 10, name: "Pure Coconut Oil", price: 800, cat: "budget", img: "https://i.postimg.cc/bNpPPMvD/PURE-COCONUT-OIL.png", desc: "100% pure cold pressed coconut oil — 250ml", extra: "250ml" },
+      { id: 11, name: "Pure Mustard Oil", price: 250, cat: "budget", img: "https://i.postimg.cc/qB8r90p6/mustard-oil.png", desc: "100% pure cold pressed mustard oil — 250ml", extra: "250ml" }
+    ];
 
-<section class="section reviews-section" id="reviews">
-  <div class="section-header"><div class="section-label">Customer Love</div><h2 class="section-title">What People Say</h2><div class="section-line"></div></div>
-  <div class="slider-wrapper">
-    <div class="slider-track" id="sliderTrack"></div>
-    <div class="slider-arrows">
-      <button class="slider-arrow" onclick="slideDir(-1)">‹</button>
-      <button class="slider-arrow" onclick="slideDir(1)">›</button>
-    </div>
-    <div class="slider-dots" id="sliderDots"></div>
-  </div>
-  <button class="review-form-btn" onclick="openModal('reviewModal')">✍️ Write a Review</button>
-</section>
-
-<section class="section faq-section" id="faq">
-  <div class="section-header"><div class="section-label">Questions?</div><h2 class="section-title">Frequently Asked Questions</h2><div class="section-line"></div></div>
-  <div class="faq-list" id="faqList"></div>
-</section>
-
-<section class="section contact-section" id="contact">
-  <div class="section-header"><div class="section-label">Get In Touch</div><h2 class="section-title">Order Now</h2><div class="section-line"></div><p class="section-desc">Ready to experience the power of nature? Place your order now!</p></div>
-  <div class="contact-grid">
-    <a href="https://wa.me/923199088670" target="_blank" class="contact-card"><div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div><div><h4>Call / WhatsApp</h4><p>0319-9088670</p></div></a>
-    <div class="contact-card"><div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div><h4>Delivery Area</h4><p>Local Area — Cash on Delivery</p></div></div>
-    <div class="contact-card"><div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4 1.79-4 4 4 4 4 1.79 4 4-1.12 2.5-2.5 2.5z"/></svg></div><div><h4>Business Owner</h4><p>Tanvir Qureshi</p></div></div>
-    <a href="https://wa.me/c/923199088670" target="_blank" class="contact-card"><div class="contact-card-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg></div><div><h4>WhatsApp Catalog</h4><p>View all products</p></div></a>
-    <div class="contact-wa-big"><a href="https://wa.me/923199088670?text=Hi!%20I%20want%20to%20order%20Green%20Roots%20products" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg> 📱 Order on WhatsApp</a><p class="contact-note">Local Area Delivery • Cash on Delivery • No Advance Payment</p></div>
-    <div class="easypaisa-info">
-      <p style="font-size:13px;color:rgba(255,255,255,0.4);text-align:center;margin-bottom:8px">Or pay via</p>
-      <a href="easypaisa://" class="easypaisa-btn"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2z"/></svg> Pay with Easypaisa</a>
-    </div>
-    <div class="qr-area"><div class="qr-box"><img src="https://i.postimg.cc/MKqww4Gv/QR-CODE.png" alt="Green Roots QR Code" /><p>Scan to open WhatsApp</p></div></div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-brand">Green Roots</div>
-  <p>Herbal Oils & Herbal Shampoo — 100% Cold Pressed, Fully Organic</p>
-  <div class="footer-links"><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
-  <div class="footer-copy">© 2025 Green Roots — By Tanvir Qureshi. All Rights Reserved.</div>
-</footer>
-
-<a href="https://wa.me/923199088670?text=Hi!%20I%20want%20to%20order%20Green%20Roots%20products" target="_blank" class="float-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></a>
-
-<div class="back-to-top" id="backToTop" onclick="scrollToTop()">
-  <svg viewBox="0 0 24 24"><path d="M15 20l-5-5 1.41-1.41L15 26 7.59-7.59L23 13l-1.41-1.41z"/></svg>
-</div>
-
-<div class="toast" id="toast"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span id="toastText"></span></div>
-
-<div class="modal-overlay" id="reviewModal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal('reviewModal')">✕</button>
-    <h3>✍️ Write Your Review</h3>
-    <div class="form-group"><label>Your Name</label><input type="text" id="reviewName" placeholder="Enter your name" /></div>
-    <div class="form-group"><label>Rating</label><div class="star-select" id="starSelect"><button onclick="setRating(1)"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></button><button onclick="setRating(2)"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></button><button onclick="setRating(3)"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></button><button onclick="setRating(4)"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></button><button onclick="setRating(5)"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></button></div></div>
-    <div class="form-group"><label>Your Review</label><textarea id="reviewText" placeholder="Share your experience..."></textarea></div>
-    <button class="form-submit" onclick="submitReview()">Submit Review ✅</button>
-  </div>
-</div>
-
-<div class="cart-overlay" id="cart-overlay" onclick="toggleCart()">
-  <div class="cart-sidebar" onclick="event.stopPropagation()">
-    <div class="cart-header">
-      <h3>Your Cart</h3>
-      <button class="cart-close" onclick="toggleCart()">✕</button>
-    </div>
-    <div class="cart-items" id="cart-items"></div>
-    <div class="cart-footer">
-      <div class="cart-total">
-        <span class="cart-total-label">Total:</span>
-        <span class="cart-total-price" id="cart-total-price">Rs.0</span>
-      </div>
-      <button class="cart-checkout cash" onclick="checkout('COD')">Checkout (Cash on Delivery)</button>
-      <button class="cart-checkout easypaisa" onclick="checkout('Easypaisa')">Checkout (Easypaisa)</button>
-    </div>
-  </div>
-</div>
-
-<script>
-const DEFAULT_PRODUCTS=[
-  {id:1,name:"Kids Hair Oil",price:1000,cat:"oils",img:"https://i.postimg.cc/BZx3dsJK/kid-oil.png",desc:"Gentle & safe formula for children's delicate hair",tag:"👶 Kids Safe"},
-  {id:2,name:"White Hair Dark Oil",price:800,cat:"oils",img:"https://i.postimg.cc/SNk445KG/white-hair-dark-oil.png",desc:"Naturally darken white & grey hair with herbs",tag:"Bestseller"},
-  {id:3,name:"Fast Hair Growth Oil",price:800,cat:"oils",img:"https://i.postimg.cc/J0cWJ3p3/fast-hair-growth.png",desc:"Accelerate hair growth naturally",tag:""},
-  {id:4,name:"Anti Hair Fall Oil",price:1000,cat:"oils",img:"https://i.postimg.cc/dQ8Fzvwb/anti-fall-hair-oil.png",desc:"Stop hair fall & strengthen roots",tag:"Popular"},
-  {id:5,name:"Root Strength Oil",price:1000,cat:"oils",img:"https://i.postimg.cc/gkmpp50s/ROOT-STRENGTH-oil.png",desc:"Deep root nourishment for stronger hair",tag:""},
-  {id:6,name:"Cooling Herbal Oil",price:1000,cat:"oils",img:"https://i.postimg.cc/T2rxZGT8/cooling-hair-oil.png",desc:"Refreshing cooling for scalp relaxation"},
-  {id:7,name:"Non-Sticky Luxury Oil",price:1000,cat:"oils",img:"https://i.postimg.cc/fTDssFbL/non-sticky-oil.png",desc:"Lightweight non-sticky premium oil",tag:"Luxury"},
-  {id:8,name:"Strong & Shine Oil",price:1000,cat:"oils",img:"https://i.postimg.cc/GhdRRNpg/strong-shine-oil.png",desc:"Premium shine & smoothness for beautiful hair",badge:"★ Featured"},
-  {id:9,name:"Herbal Shampoo",price:800,cat:"shampoo",img:"https://i.postimg.cc/05pvLx9x/herbal-shampoo.png",desc:"Gentle herbal cleansing",tag:"Shampoo"},
-  {id:10,name:"Pure Coconut Oil",price:800,cat:"budget",img:"https://i.postimg.cc/bNpPPMvD/PURE-COCONUT-OIL.png",desc:"100% pure cold pressed coconut oil — 250ml",extra:"250ml"},
-  {id:11,name:"Pure Mustard Oil",price:250,cat:"budget",img:"https://i.postimg.cc/qB8r90p6/mustard-oil.png",desc:"100% pure cold pressed mustard oil — 250ml",extra:"250ml"}
-];
-
-let products = [];
-try {
-    const sp = localStorage.getItem('gr_products');
-    products = sp ? JSON.parse(sp) : JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
-    if(!products || !products.length) products = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
-} catch(e) {
-    products = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
-}
-
-let cart = [];
-try {
-    const sc = localStorage.getItem('gr_cart');
-    cart = sc ? JSON.parse(sc) : [];
-} catch(e) {
-    cart = [];
-}
-
-let lang = 'en';
-let currentSlide = 0;
-let sliderInterval = null;
-let currentRating = 0;
-
-const reviewsData = [
-  {name:'Ayesha Khan',text:'Strong & Shine Oil is amazing! Mere baal bohat shiny aur soft ho gaye hain.',rating:5,date:'2 weeks ago'},
-  {name:'Usman Ali',text:'Anti Hair Fall Oil ne mere baal fall kam kar dia hai. Highly recommended!',rating:5,date:'1 month ago'},
-  {name:'Fatima Noor',text:'Kids Hair Oil use kar rahi hoon apni beti ke liye. 100% safe hai!',rating:5,date:'3 weeks ago'},
-  {name:'Zara Ahmed',text:'Non-Sticky Luxury Oil best hai! Lightweight aur non-sticky. Love it!',rating:5,date:'5 days ago'},
-  {name:'Bilal Ahmed',text:'Fast Hair Growth Oil ne meray baal 2 inch lamba bhi bada hain. Bohhat effective hai!',rating:5,date:'1 week ago'},
-  {name:'Sara Khan',text:'Herbal Shampoo ne meri scalp se dandruff khatam kar dia hai. Bohhat acha lagta hai baal ko.',rating:4,date:'3 days ago'}
-];
-
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        const l = document.getElementById('loader');
-        if(l) l.classList.add('hide');
-    }, 800);
-});
-
-window.addEventListener('scroll', () => {
-    const nav = document.getElementById('navbar');
-    if(nav) nav.classList.toggle('scrolled', window.scrollY > 50);
-    const btt = document.getElementById('backToTop');
-    if(btt) {
-        if(window.scrollY > 400) btt.classList.add('show');
-        else btt.classList.remove('show');
+    let products = [];
+    try {
+      const sp = localStorage.getItem('gr_products');
+      products = sp ? JSON.parse(sp) : JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+      if (!products || !products.length) products = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+    } catch (e) {
+      products = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
     }
-});
 
-function toggleMenu() {
-    const m = document.getElementById('mobileMenu');
-    if(m) m.classList.toggle('open');
-}
-function scrollToTop() { window.scrollTo({top:0,behavior:'smooth'}); }
+    let cart = [];
+    try {
+      const sc = localStorage.getItem('gr_cart');
+      cart = sc ? JSON.parse(sc) : [];
+    } catch (e) {
+      cart = [];
+    }
 
-function toggleTheme() {
-    const html = document.documentElement;
-    const curr = html.getAttribute('data-theme') || 'light';
-    const next = curr === 'light' ? 'dark' : 'light';
-    html.setAttribute('data-theme', next);
-    try { localStorage.setItem('gr_theme', next); } catch(e) {}
-    const btn = document.getElementById('themeToggle');
-    if(btn) btn.innerHTML = next === 'dark' ? '☀️' : '🌙';
-}
+    let lang = 'en';
+    let currentSlide = 0;
+    let sliderInterval = null;
+    let currentRating = 0;
 
-function toggleLang() {
-    lang = lang === 'en' ? 'ur' : 'en';
-    try { localStorage.setItem('gr_lang', lang); } catch(e) {}
-    const lbl = document.getElementById('langLabel');
-    if(lbl) lbl.textContent = lang === 'en' ? 'اردو' : 'EN';
-    document.body.style.direction = lang === 'ur' ? 'rtl' : 'ltr';
-}
+    const reviewsData = [
+      { name: 'Ayesha Khan', text: 'Strong & Shine Oil is amazing! Mere baal bohat shiny aur soft ho gaye hain.', rating: 5, date: '2 weeks ago' },
+      { name: 'Usman Ali', text: 'Anti Hair Fall Oil ne mere baal fall kam kar dia hai. Highly recommended!', rating: 5, date: '1 month ago' },
+      { name: 'Fatima Noor', text: 'Kids Hair Oil use kar rahi hoon apni beti ke liye. 100% safe hai!', rating: 5, date: '3 weeks ago' },
+      { name: 'Zara Ahmed', text: 'Non-Sticky Luxury Oil best hai! Lightweight aur non-sticky. Love it!', rating: 5, date: '5 days ago' },
+      { name: 'Bilal Ahmed', text: 'Fast Hair Growth Oil ne meray baal 2 inch lamba bhi bada hain. Bohhat effective hai!', rating: 5, date: '1 week ago' },
+      { name: 'Sara Khan', text: 'Herbal Shampoo ne meri scalp se dandruff khatam kar dia hai. Bohhat acha lagta hai baal ko.', rating: 4, date: '3 days ago' }
+    ];
 
-function renderProducts(filter = 'all', searchTerm = '') {
-    const grid = document.getElementById('productsGrid');
-    if(!grid) return;
-    
-    let html = '';
-    const filtered = products.filter(p => {
-        if(filter !== 'all' && p.cat !== filter) return false;
-        if(searchTerm) {
-            const s = searchTerm.toLowerCase();
-            if(!p.name.toLowerCase().includes(s)) return false;
-        }
-        return true;
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const l = document.getElementById('loader');
+        if (l) l.classList.add('hide');
+      }, 800);
     });
 
-    if(filtered.length === 0) {
-        grid.innerHTML = '<p style="text-align:center;color:var(--text3);padding:40px;">No products found.</p>';
-        return;
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+      const btt = document.getElementById('backToTop');
+      if (btt) {
+        if (window.scrollY > 400) btt.classList.add('show');
+        else btt.classList.remove('show');
+      }
+    });
+
+    function toggleMenu() {
+      const m = document.getElementById('mobileMenu');
+      if (m) m.classList.toggle('open');
+    }
+    function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+    function toggleTheme() {
+      const html = document.documentElement;
+      const curr = html.getAttribute('data-theme') || 'light';
+      const next = curr === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', next);
+      try { localStorage.setItem('gr_theme', next); } catch (e) { }
+      const btn = document.getElementById('themeToggle');
+      if (btn) btn.innerHTML = next === 'dark' ? '☀️' : '🌙';
     }
 
-    filtered.forEach(p => {
+    function toggleLang() {
+      lang = lang === 'en' ? 'ur' : 'en';
+      try { localStorage.setItem('gr_lang', lang); } catch (e) { }
+      const lbl = document.getElementById('langLabel');
+      if (lbl) lbl.textContent = lang === 'en' ? 'اردو' : 'EN';
+      document.body.style.direction = lang === 'ur' ? 'rtl' : 'ltr';
+    }
+
+    function renderProducts(filter = 'all', searchTerm = '') {
+      const grid = document.getElementById('productsGrid');
+      if (!grid) return;
+
+      let html = '';
+      const filtered = products.filter(p => {
+        if (filter !== 'all' && p.cat !== filter) return false;
+        if (searchTerm) {
+          const s = searchTerm.toLowerCase();
+          if (!p.name.toLowerCase().includes(s)) return false;
+        }
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<p style="text-align:center;color:var(--text3);padding:40px;">No products found.</p>';
+        return;
+      }
+
+      filtered.forEach(p => {
         const tagHTML = p.tag ? `<div class="product-tag">${p.tag}</div>` : '';
         const badgeHTML = p.badge ? `<div class="product-badge">${p.badge}</div>` : '';
         html += `
@@ -853,61 +2881,61 @@ function renderProducts(filter = 'all', searchTerm = '') {
                 </div>
             </div>
         </div>`;
-    });
-    grid.innerHTML = html;
-}
+      });
+      grid.innerHTML = html;
+    }
 
-function addToCart(id) {
-    const p = products.find(x => x.id === id);
-    if(!p) return;
-    const existing = cart.find(x => x.id === id);
-    if(existing) existing.qty++;
-    else cart.push({id:p.id,name:p.name,price:p.price,qty:1,img:p.img});
-    try { localStorage.setItem('gr_cart', JSON.stringify(cart)); } catch(e) {}
-    renderCart();
-    updateCartBadge();
-    showToast('🛒 Added: ' + p.name);
-}
+    function addToCart(id) {
+      const p = products.find(x => x.id === id);
+      if (!p) return;
+      const existing = cart.find(x => x.id === id);
+      if (existing) existing.qty++;
+      else cart.push({ id: p.id, name: p.name, price: p.price, qty: 1, img: p.img });
+      try { localStorage.setItem('gr_cart', JSON.stringify(cart)); } catch (e) { }
+      renderCart();
+      updateCartBadge();
+      showToast('🛒 Added: ' + p.name);
+    }
 
-function removeFromCart(id) {
-    cart = cart.filter(x => x.id !== id);
-    try { localStorage.setItem('gr_cart', JSON.stringify(cart)); } catch(e) {}
-    renderCart();
-    updateCartBadge();
-}
+    function removeFromCart(id) {
+      cart = cart.filter(x => x.id !== id);
+      try { localStorage.setItem('gr_cart', JSON.stringify(cart)); } catch (e) { }
+      renderCart();
+      updateCartBadge();
+    }
 
-function changeQty(id, delta) {
-    const item = cart.find(x => x.id === id);
-    if(!item) return;
-    item.qty += delta;
-    if(item.qty < 1) item.qty = 1;
-    try { localStorage.setItem('gr_cart', JSON.stringify(cart)); } catch(e) {}
-    renderCart();
-    updateCartBadge();
-}
+    function changeQty(id, delta) {
+      const item = cart.find(x => x.id === id);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty < 1) item.qty = 1;
+      try { localStorage.setItem('gr_cart', JSON.stringify(cart)); } catch (e) { }
+      renderCart();
+      updateCartBadge();
+    }
 
-function updateCartBadge() {
-    const badge = document.getElementById('cartBadge');
-    if(!badge) return;
-    const total = cart.reduce((s, i) => s + i.qty, 0);
-    badge.textContent = total > 0 ? total : '';
-    badge.classList.toggle('show', total > 0);
-}
+    function updateCartBadge() {
+      const badge = document.getElementById('cartBadge');
+      if (!badge) return;
+      const total = cart.reduce((s, i) => s + i.qty, 0);
+      badge.textContent = total > 0 ? total : '';
+      badge.classList.toggle('show', total > 0);
+    }
 
-function renderCart() {
-    const wrap = document.getElementById('cart-items');
-    const totalEl = document.getElementById('cart-total-price');
-    if(!wrap || !totalEl) return;
+    function renderCart() {
+      const wrap = document.getElementById('cart-items');
+      const totalEl = document.getElementById('cart-total-price');
+      if (!wrap || !totalEl) return;
 
-    if(cart.length === 0) {
+      if (cart.length === 0) {
         wrap.innerHTML = '<div class="cart-empty"><p>Cart is empty</p></div>';
         totalEl.textContent = 'Rs.0';
         return;
-    }
+      }
 
-    let html = '';
-    let total = 0;
-    cart.forEach(item => {
+      let html = '';
+      let total = 0;
+      cart.forEach(item => {
         total += item.price * item.qty;
         html += `
         <div class="cart-item">
@@ -923,47 +2951,47 @@ function renderCart() {
                 <button class="cart-item-remove" onclick="removeFromCart(${item.id})">✕ Remove</button>
             </div>
         </div>`;
-    });
-    wrap.innerHTML = html;
-    totalEl.textContent = 'Rs.' + total;
-}
+      });
+      wrap.innerHTML = html;
+      totalEl.textContent = 'Rs.' + total;
+    }
 
-function toggleCart() {
-    document.getElementById('cart-overlay').classList.toggle('open');
-}
+    function toggleCart() {
+      document.getElementById('cart-overlay').classList.toggle('open');
+    }
 
-function checkout(method) {
-    let msg = "Hi! I want to order:\n";
-    let total = 0;
-    cart.forEach(i => { msg += `${i.name} x${i.qty} = Rs.${i.price*i.qty}\n`; total += i.price*i.qty; });
-    msg += `\nTotal: Rs.${total}\nPayment Method: ${method}`;
-    window.open(`https://wa.me/923199088670?text=${encodeURIComponent(msg)}`, '_blank');
-}
+    function checkout(method) {
+      let msg = "Hi! I want to order:\n";
+      let total = 0;
+      cart.forEach(i => { msg += `${i.name} x${i.qty} = Rs.${i.price * i.qty}\n`; total += i.price * i.qty; });
+      msg += `\nTotal: Rs.${total}\nPayment Method: ${method}`;
+      window.open(`https://wa.me/923199088670?text=${encodeURIComponent(msg)}`, '_blank');
+    }
 
-function searchProducts(val) {
-    renderProducts('all', val);
-}
+    function searchProducts(val) {
+      renderProducts('all', val);
+    }
 
-document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         renderProducts(btn.dataset.filter);
+      });
     });
-});
 
-const faqData = [
-  {q:'Delivery kis kis area mein hoti hai?',a:'Abhi humari delivery sirf local area mein available hai. Cash on Delivery (COD) ke sath order apke doorstep tak pohanchta hai.'},
-  {q:'Payment kaise karni hai?',a:'Cash on Delivery (COD) hai — order milne par cash pay karein. Koi advance payment nahi chahiye!'},
-  {q:'Cold Pressed oil kya hota hai?',a:'Oil bina kisi heat ke extract kiya jata hai — is se oil ke saare natural nutrients bachay rehte hain.'},
-  {q:'Kya ye oils chemicals free hain?',a:'Bilkul! Green Roots ke saare oils 100% organic aur chemical free hain.'},
-  {q:'Order kaise karein?',a:'Website par kisi bhi product ke neeche green WhatsApp button dabao. Ya directly 0319-9088670 par WhatsApp karein.'}
-];
+    const faqData = [
+      { q: 'Delivery kis kis area mein hoti hai?', a: 'Abhi humari delivery sirf local area mein available hai. Cash on Delivery (COD) ke sath order apke doorstep tak pohanchta hai.' },
+      { q: 'Payment kaise karni hai?', a: 'Cash on Delivery (COD) hai — order milne par cash pay karein. Koi advance payment nahi chahiye!' },
+      { q: 'Cold Pressed oil kya hota hai?', a: 'Oil bina kisi heat ke extract kiya jata hai — is se oil ke saare natural nutrients bachay rehte hain.' },
+      { q: 'Kya ye oils chemicals free hain?', a: 'Bilkul! Green Roots ke saare oils 100% organic aur chemical free hain.' },
+      { q: 'Order kaise karein?', a: 'Website par kisi bhi product ke neeche green WhatsApp button dabao. Ya directly 0319-9088670 par WhatsApp karein.' }
+    ];
 
-function initFaq() {
-    const list = document.getElementById('faqList');
-    if(!list) return;
-    list.innerHTML = faqData.map(item => `
+    function initFaq() {
+      const list = document.getElementById('faqList');
+      if (!list) return;
+      list.innerHTML = faqData.map(item => `
         <div class="faq-item">
             <div class="faq-q" onclick="toggleFaq(this)">
                 <h4>${item.q}</h4>
@@ -972,25 +3000,25 @@ function initFaq() {
             <div class="faq-a"><p>${item.a}</p></div>
         </div>
     `).join('');
-}
+    }
 
-function toggleFaq(el) {
-    const item = el.parentElement;
-    const wasOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(x => x.classList.remove('open'));
-    if(!wasOpen) item.classList.add('open');
-}
+    function toggleFaq(el) {
+      const item = el.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(x => x.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    }
 
-function initSlider() {
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if(!track || !dots) return;
+    function initSlider() {
+      const track = document.getElementById('sliderTrack');
+      const dots = document.getElementById('sliderDots');
+      if (!track || !dots) return;
 
-    track.innerHTML = reviewsData.map(r => {
+      track.innerHTML = reviewsData.map(r => {
         const cols = ['#ec4899', '#8b5cf6', '#f97316', '#0e7490', '#22c55e'];
-        const c = cols[r.rating-1] || cols[4];
+        const c = cols[r.rating - 1] || cols[4];
         let stars = '';
-        for(let i=0; i<5; i++) stars += `<svg viewBox="0 0 24 24" style="fill:${i<r.rating?'#fbbf24':'#ddd'};width:16px;height:16px"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`;
+        for (let i = 0; i < 5; i++) stars += `<svg viewBox="0 0 24 24" style="fill:${i < r.rating ? '#fbbf24' : '#ddd'};width:16px;height:16px"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`;
         return `
         <div class="slider-card">
             <div class="review-card">
@@ -1005,80 +3033,81 @@ function initSlider() {
                 </div>
             </div>
         </div>`;
-    }).join('');
+      }).join('');
 
-    const total = reviewsData.length;
-    dots.innerHTML = Array.from({length: total}, (_, i) => `<div class="slider-dot ${i===currentSlide?'active':''}" onclick="goToSlide(${i})"></div>`).join('');
-    
-    clearInterval(sliderInterval);
-    sliderInterval = setInterval(() => {
+      const total = reviewsData.length;
+      dots.innerHTML = Array.from({ length: total }, (_, i) => `<div class="slider-dot ${i === currentSlide ? 'active' : ''}" onclick="goToSlide(${i})"></div>`).join('');
+
+      clearInterval(sliderInterval);
+      sliderInterval = setInterval(() => {
         currentSlide = (currentSlide + 1) % total;
         goToSlide(currentSlide);
-    }, 3500);
-}
+      }, 3500);
+    }
 
-function goToSlide(i) {
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if(!track || !dots) return;
-    currentSlide = i;
-    track.style.transform = `translateX(-${i*100}%)`;
-    Array.from(dots.children).forEach((d, j) => d.classList.toggle('active', j === i));
-}
+    function goToSlide(i) {
+      const track = document.getElementById('sliderTrack');
+      const dots = document.getElementById('sliderDots');
+      if (!track || !dots) return;
+      currentSlide = i;
+      track.style.transform = `translateX(-${i * 100}%)`;
+      Array.from(dots.children).forEach((d, j) => d.classList.toggle('active', j === i));
+    }
 
-function slideDir(dir) {
-    let total = reviewsData.length;
-    currentSlide = (currentSlide + dir + total) % total;
-    goToSlide(currentSlide);
-}
+    function slideDir(dir) {
+      let total = reviewsData.length;
+      currentSlide = (currentSlide + dir + total) % total;
+      goToSlide(currentSlide);
+    }
 
-function openModal(id) { document.getElementById(id).classList.add('open'); }
-function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+    function openModal(id) { document.getElementById(id).classList.add('open'); }
+    function closeModal(id) { document.getElementById(id).classList.remove('open'); }
 
-function setRating(n) {
-    currentRating = n;
-    document.querySelectorAll('#starSelect button').forEach((b, i) => b.classList.toggle('active', i < n));
-}
+    function setRating(n) {
+      currentRating = n;
+      document.querySelectorAll('#starSelect button').forEach((b, i) => b.classList.toggle('active', i < n));
+    }
 
-function submitReview() {
-    const n = document.getElementById('reviewName').value.trim();
-    const t = document.getElementById('reviewText').value.trim();
-    if(!n || !t || currentRating === 0) {
+    function submitReview() {
+      const n = document.getElementById('reviewName').value.trim();
+      const t = document.getElementById('reviewText').value.trim();
+      if (!n || !t || currentRating === 0) {
         showToast('⚠️ Please fill all fields & select rating');
         return;
+      }
+      closeModal('reviewModal');
+      showToast('✅ Review submitted!');
+      document.getElementById('reviewName').value = '';
+      document.getElementById('reviewText').value = '';
+      currentRating = 0;
+      document.querySelectorAll('#starSelect button').forEach(b => b.classList.remove('active'));
     }
-    closeModal('reviewModal');
-    showToast('✅ Review submitted!');
-    document.getElementById('reviewName').value = '';
-    document.getElementById('reviewText').value = '';
-    currentRating = 0;
-    document.querySelectorAll('#starSelect button').forEach(b => b.classList.remove('active'));
-}
 
-function showToast(msg) {
-    const toast = document.getElementById('toast');
-    const txt = document.getElementById('toastText');
-    if(!toast || !txt) return;
-    txt.textContent = msg;
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 3000);
-}
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const txt = document.getElementById('toastText');
+      if (!toast || !txt) return;
+      txt.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+    }
 
-document.addEventListener('DOMContentLoaded', () => {
-    try {
+    document.addEventListener('DOMContentLoaded', () => {
+      try {
         renderProducts();
         initFaq();
         initSlider();
         renderCart();
         updateCartBadge();
-    } catch(e) {
+      } catch (e) {
         console.error("Init error:", e);
-    }
-    setTimeout(() => {
+      }
+      setTimeout(() => {
         const l = document.getElementById('loader');
-        if(l) l.classList.add('hide');
-    }, 1500);
-});
-</script>
+        if (l) l.classList.add('hide');
+      }, 1500);
+    });
+  </script>
 </body>
+
 </html>
