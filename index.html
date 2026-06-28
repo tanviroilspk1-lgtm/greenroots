@@ -212,15 +212,19 @@ overflow:hidden;
 transition:all .4s ease;
 box-shadow:0 15px 40px rgba(0,0,0,.08);
 backdrop-filter:blur(12px);
+cursor:pointer;
 }
 .product-card:hover{
-transform:translateY(-12px);
-box-shadow:0 30px 60px rgba(0,0,0,.15);
+transform:translateY(-14px) scale(1.02);
+box-shadow:0 35px 70px rgba(0,0,0,.18);
 border-color:#fbbf24;
+background:linear-gradient(180deg,#ffffff,#fdfcf7);
 }
 .product-img-area{height:260px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--bg)}
 .product-img-area img{width:85%;height:85%;object-fit:contain;transition:transform .6s}
-.product-card:hover .product-img-area img{transform:scale(1.08)}
+.product-card:hover .product-img-area img{
+transform:scale(1.12) rotate(-2deg);
+}
 .product-badge{position:absolute;top:10px;right:10px;background:var(--bg-card);color:var(--text);font-size:9px;font-weight:700;padding:4px 10px;border-radius:50px;letter-spacing:0.5px;text-transform:uppercase;box-shadow:0 2px 8px var(--shadow)}
 .product-tag{position:absolute;top:10px;left:10px;background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#052e16;font-size:9px;font-weight:700;padding:4px 10px;border-radius:50px;letter-spacing:0.5px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
 .product-info{
@@ -244,11 +248,10 @@ margin-bottom:14px;
 min-height:44px;
 }
 .product-price{
-font-size:22px;
-font-weight:700;
-color:#166534;
+  font-size:22px;
+  font-weight:700;
+  color:#166534;
 }
-font-size:20px;font-weight:700;color:var(--green)}
 .product-price small{font-size:12px;font-weight:400;color:var(--text3)}
 .product-wa{
 width:46px;
@@ -727,7 +730,7 @@ Every product is prepared with care, honesty and respect for nature. Our mission
 
 <script>
 const DEFAULT_PRODUCTS=[
-  {id:1,name:"Kids Hair Oil",price:1000,cat:"oils",img:"https://i.postimg.cc/BZx3dsJK/kid-oil.png",desc:"Gentle & safe formula for children's delicate hair",tag:"Kids"},
+  {id:1,name:"Kids Hair Oil",price:1000,cat:"oils",img:"https://i.postimg.cc/BZx3dsJK/kid-oil.png",desc:"Gentle & safe formula for children's delicate hair",tag:"👶 Kids Safe"},
   {id:2,name:"White Hair Dark Oil",price:800,cat:"oils",img:"https://i.postimg.cc/SNk445KG/white-hair-dark-oil.png",desc:"Naturally darken white & grey hair with herbs",tag:"Bestseller"},
   {id:3,name:"Fast Hair Growth Oil",price:800,cat:"oils",img:"https://i.postimg.cc/J0cWJ3p3/fast-hair-growth.png",desc:"Accelerate hair growth naturally",tag:""},
   {id:4,name:"Anti Hair Fall Oil",price:1000,cat:"oils",img:"https://i.postimg.cc/dQ8Fzvwb/anti-fall-hair-oil.png",desc:"Stop hair fall & strengthen roots",tag:"Popular"},
