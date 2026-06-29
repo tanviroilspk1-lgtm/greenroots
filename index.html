@@ -758,39 +758,53 @@
     box-shadow: 0 12px 28px rgba(251,191,36,.35);
     transform: translateY(-2px);
 }
-    .search-bar {
-      max-width: 400px;
-      margin: 0 auto 30px;
-      position: relative
-    }
+   .search-bar{
+    max-width:480px;
+    margin:0 auto 40px;
+    position:relative;
+}
 
-    .search-bar input {
-      width: 100%;
-      padding: 12px 20px 12px 46px;
-      border: 2px solid var(--border);
-      border-radius: 50px;
-      font-size: 14px;
-      font-family: 'Poppins', sans-serif;
-      background: var(--bg-card);
-      color: var(--text);
-      outline: none;
-      transition: border-color .3s
-    }
+.search-bar input{
+    width:100%;
+    padding:15px 24px 15px 54px;
+    border:1px solid rgba(255,255,255,.4);
+    border-radius:60px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    font-size:14px;
+    font-family:'Poppins',sans-serif;
+    color:var(--text);
+    outline:none;
+    transition:all .35s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
 
-    .search-bar input:focus {
-      border-color: var(--accent)
-    }
+.search-bar input::placeholder{
+    color:var(--text3);
+}
 
-    .search-bar svg {
-      position: absolute;
-      left: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 18px;
-      height: 18px;
-      fill: var(--text3)
-    }
+.search-bar input:focus{
+    border-color:#22c55e;
+    box-shadow:0 0 0 4px rgba(34,197,94,.12),
+               0 15px 35px rgba(34,197,94,.20);
+    background:#fff;
+}
 
+.search-bar svg{
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    width:20px;
+    height:20px;
+    fill:var(--green);
+    transition:.3s;
+}
+
+.search-bar:hover svg{
+    transform:translateY(-50%) scale(1.1);
+}
     .products-grid {
       max-width: 1200px;
       margin: 0 auto;
@@ -901,6 +915,32 @@ margin:10px 0 14px;
 font-size:14px;
 font-weight:700;
 color:#fbbf24;
+}
+.product-trust{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:12px;
+flex-wrap:wrap;
+margin-top:14px;
+padding-top:12px;
+border-top:1px solid rgba(0,0,0,.06);
+font-size:11px;
+color:var(--text3);
+}
+
+.product-trust span{
+display:flex;
+align-items:center;
+gap:4px;
+font-weight:500;
+transition:.3s;
+white-space:nowrap;
+}
+
+.product-trust span:hover{
+color:var(--green);
+transform:translateY(-2px);
 }
 
 .product-rating span{
@@ -1481,7 +1521,7 @@ color:var(--text3);
     .faq-icon svg {
       width: 14px;
       height: 14px;
-      fill: var(--green);
+      color: var(--green);
       transition: all .3s
     }
 
@@ -2249,6 +2289,19 @@ color:var(--text3);
       .hero-stat-num {
         font-size: 26px
       }
+      .product-trust{
+    display:flex;
+    justify-content:space-between;
+    gap:6px;
+    margin-top:10px;
+    flex-wrap:wrap;
+}
+
+.product-trust span{
+    flex:1;
+    justify-content:center;
+    font-size:10px;
+}
 
       .products-grid {
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -2498,8 +2551,8 @@ color:var(--text3);
       <button class="filter-btn" data-filter="budget">💰 Budget Friendly</button>
     </div>
     <div class="search-bar">
-      <svg viewBox="0 0 24 24">
-        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2" />
+    <svg viewBox="0 0 24 24">
+        <path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16a6.47 6.47 0 004.23-1.57l.27.28v.79L20 21.5 21.5 20l-6-6zm-6 0A4.5 4.5 0 119.5 5a4.5 4.5 0 010 9z" fill="currentColor"/>
       </svg>
       <input type="text" id="searchInput" placeholder="Search products..." oninput="searchProducts(this.value)" />
     </div>
@@ -2903,6 +2956,11 @@ color:var(--text3);
                 <div class="product-rating">
 ★★★★★
 <span>Trusted by Hair Lovers</span>
+</div>
+<div class="product-trust">
+<span>🌿 Natural</span>
+<span>🚚 Fast</span>
+<span>💚 Trusted</span>
 </div>
                 <div class="product-bottom">
                     <div class="product-price">Rs.${p.price} <small>${p.extra || ''}</small></div>
