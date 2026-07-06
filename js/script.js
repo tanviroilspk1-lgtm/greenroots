@@ -110,7 +110,7 @@ const DEFAULT_PRODUCTS = [
         html += `
         <div class="product-card">
             <div class="product-img-area">
-                <img src="${p.img}" alt="${p.name}" loading="lazy" />
+                <img src="${p.img}" alt="${p.name} | Green Roots Pakistan Natural Hair Oil" loading="lazy" decoding="async" />
                 ${tagHTML}${badgeHTML}
             </div>
             <div class="product-info">
