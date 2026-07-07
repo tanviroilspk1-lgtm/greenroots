@@ -42,6 +42,18 @@
       --cream: #2D2418;
       
     }
+    [data-theme="dark"] .owner-photo{
+    border-color:#D4A843;
+    box-shadow:0 10px 35px rgba(212,168,67,.25);
+}
+
+[data-theme="dark"] .payment-owner strong{
+    color:#ffffff;
+}
+
+[data-theme="dark"] .payment-owner small{
+    color:#8fd18f;
+}
     [data-theme="dark"] .product-info{
     background: linear-gradient(to bottom, var(--bg-card), var(--bg-card2));
 }
@@ -2543,4 +2555,182 @@ color:var(--text3);
     color:var(--text);
     cursor:pointer;
     font-size:18px;
+}
+/* ===== Owner Profile ===== */
+
+.payment-owner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    margin:18px 0;
+}
+
+.owner-photo{
+    width:95px;
+    height:95px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid var(--accent);
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+    margin-bottom:12px;
+    transition:.35s ease;
+}
+
+.owner-photo:hover{
+    transform:scale(1.06);
+}
+
+.payment-owner strong{
+    font-size:20px;
+    font-weight:700;
+    color:var(--text);
+    margin-bottom:4px;
+}
+
+.payment-owner small{
+    font-size:13px;
+    color:var(--green);
+    font-weight:600;
+    margin-bottom:8px;
+    display:block;
+}
+
+#payment-number{
+    font-size:17px;
+    font-weight:700;
+    color:var(--accent);
+    letter-spacing:.5px;
+}
+/* ==========================
+   Premium Trust Strip
+========================== */
+
+.trust-strip{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:16px;
+    margin:28px auto 36px;
+}
+
+.trust-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 20px;
+    background:rgba(255,255,255,.88);
+    border:1px solid rgba(212,168,67,.15);
+    border-radius:50px;
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s ease;
+    font-size:14px;
+    font-weight:600;
+    color:var(--text);
+}
+
+.trust-item:hover{
+    transform:translateY(-4px);
+    border-color:var(--accent);
+    box-shadow:0 16px 35px rgba(212,168,67,.20);
+}
+
+.trust-item span{
+    white-space:nowrap;
+}
+[data-theme="dark"] .trust-item{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    color:#F5F0E6;
+}
+
+[data-theme="dark"] .trust-item:hover{
+    background:var(--bg-card2);
+    border-color:var(--accent);
+}
+@media(max-width:768px){
+
+.trust-strip{
+    gap:10px;
+}
+
+.trust-item{
+    font-size:12px;
+    padding:10px 14px;
+}
+
+}
+/* ==========================
+   Premium Trust Counter
+========================== */
+
+.trust-counter{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin:18px auto 30px;
+}
+
+.counter-box{
+    min-width:152px;
+    padding:16px 14px;
+    text-align:center;
+    background:rgba(255,255,255,.90);
+    border:1px solid rgba(212,168,67,.12);
+    border-radius:22px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s ease;
+}
+
+.counter-box:hover{
+    transform:translateY(-6px);
+    border-color:var(--accent);
+    box-shadow:0 22px 45px rgba(212,168,67,.20);
+}
+
+.counter-box h3{
+    font-size:28px;
+    color:var(--green);
+    margin-bottom:8px;
+    font-weight:700;
+}
+
+.counter-box span{
+    color:var(--text2);
+    font-size:14px;
+    font-weight:600;
+}
+
+[data-theme="dark"] .counter-box{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+}
+
+[data-theme="dark"] .counter-box:hover{
+    background:var(--bg-card2);
+    border-color:var(--accent);
+}
+
+@media(max-width:768px){
+
+.counter-box{
+    min-width:125px;
+    padding:15px 10px;
+}
+
+.counter-box h3{
+    font-size:24px;
+}
+
+.counter-box span{
+    font-size:12px;
+}
+
 }

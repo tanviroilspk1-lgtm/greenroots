@@ -213,15 +213,29 @@ const DEFAULT_PRODUCTS = [
 
     function checkout(method) {
 
-    let msg = "Hi! I want to order:\n";
     let total = 0;
 
-    cart.forEach(i => {
-        msg += `${i.name} x${i.qty} = Rs.${i.price * i.qty}\n`;
-        total += i.price * i.qty;
-    });
+let msg = "🌿 Green Roots Pakistan\n\n";
+msg += "🛒 *New Order*\n\n";
+msg += "📦 Products:\n\n";
 
-    msg += `\nTotal: Rs.${total}\nPayment Method: ${method}`;
+cart.forEach(i => {
+
+    msg += `• ${i.name} ×${i.qty} = Rs.${i.price * i.qty}\n`;
+
+    total += i.price * i.qty;
+
+});
+
+msg += "\n";
+msg += `💰 Total: Rs.${total}\n`;
+msg += `💳 Payment: ${method}\n`;
+
+if(method === "COD"){
+
+    msg += "\n🚚 Cash on Delivery";
+
+}
 
     if(method === "Easypaisa"){
         openPaymentPopup(total);
@@ -255,21 +269,32 @@ function sendPaymentWhatsApp(){
 
     let total = document.getElementById("payment-total").innerText;
 
-    let message =
-`Assalam-o-Alaikum Green Roots 🌿
+   let message = "Green Roots Pakistan\n\n";
 
-I have paid through Easypaisa.
+message += "Payment Confirmation\n\n";
 
-👤 Account Title:
-Tanveer Iqbal Qureshi
+message += "Order Details\n";
+message += "\n";
 
-💰 Amount:
-${total}
+cart.forEach(i => {
 
-🧾 Transaction ID:
-(Write your Transaction ID here)
+    message += `${i.name} x${i.qty} = Rs.${i.price * i.qty}\n`;
 
-Kindly confirm my payment. Thank you.`;
+});
+
+message += "\n";
+
+message += `Total: ${total}\n\n`;
+
+message += "Payment Method: Easypaisa\n\n";
+
+message += "Account Title:\n";
+message += "Tanveer Iqbal Qureshi\n\n";
+
+message += "Transaction ID:\n";
+message += "(Write your Transaction ID here)\n\n";
+
+message += "Thank you for choosing Green Roots Pakistan.";
 
     window.open(
         `https://wa.me/923199088670?text=${encodeURIComponent(message)}`,
