@@ -212,12 +212,71 @@ const DEFAULT_PRODUCTS = [
     }
 
     function checkout(method) {
-      let msg = "Hi! I want to order:\n";
-      let total = 0;
-      cart.forEach(i => { msg += `${i.name} x${i.qty} = Rs.${i.price * i.qty}\n`; total += i.price * i.qty; });
-      msg += `\nTotal: Rs.${total}\nPayment Method: ${method}`;
-      window.open(`https://wa.me/923199088670?text=${encodeURIComponent(msg)}`, '_blank');
+
+    let msg = "Hi! I want to order:\n";
+    let total = 0;
+
+    cart.forEach(i => {
+        msg += `${i.name} x${i.qty} = Rs.${i.price * i.qty}\n`;
+        total += i.price * i.qty;
+    });
+
+    msg += `\nTotal: Rs.${total}\nPayment Method: ${method}`;
+
+    if(method === "Easypaisa"){
+        openPaymentPopup(total);
+        return;
     }
+
+    window.open(
+        `https://wa.me/923199088670?text=${encodeURIComponent(msg)}`,
+        '_blank'
+    );
+}
+function openPaymentPopup(total){
+
+    document.getElementById("payment-total").innerText = "Rs." + total;
+
+    document.getElementById("payment-popup").style.display = "flex";
+}
+
+function closePaymentPopup(){
+
+    document.getElementById("payment-popup").style.display = "none";
+}
+
+function copyPaymentNumber(){
+
+    navigator.clipboard.writeText("03035650538");
+
+    alert("Easypaisa Number Copied Successfully");
+}
+function sendPaymentWhatsApp(){
+
+    let total = document.getElementById("payment-total").innerText;
+
+    let message =
+`Assalam-o-Alaikum Green Roots 🌿
+
+I have paid through Easypaisa.
+
+👤 Account Title:
+Tanveer Iqbal Qureshi
+
+💰 Amount:
+${total}
+
+🧾 Transaction ID:
+(Write your Transaction ID here)
+
+Kindly confirm my payment. Thank you.`;
+
+    window.open(
+        `https://wa.me/923199088670?text=${encodeURIComponent(message)}`,
+        "_blank"
+    );
+
+}
 
     function searchProducts(val) {
       renderProducts('all', val);

@@ -457,7 +457,53 @@
   </div>
 
  
-  <script src="js/script.js"></script>
+  <!-- Easypaisa Payment Popup -->
+
+<div class="payment-popup" id="payment-popup">
+
+  <div class="payment-box">
+
+    <button class="payment-close" onclick="closePaymentPopup()">✕</button>
+
+    <h2>💳 Easypaisa Payment</h2>
+
+    <p class="payment-sub">
+      Complete your payment and then send your Transaction ID on WhatsApp.
+    </p>
+
+    <div class="payment-owner">
+
+      <strong>👤 Tanveer Iqbal Qureshi</strong>
+
+      <span id="payment-number">0303-5650538</span>
+
+    </div>
+
+    <div class="payment-total">
+
+      Total:
+      <strong id="payment-total">Rs.0</strong>
+
+    </div>
+
+    <button class="copy-number-btn"
+            onclick="copyPaymentNumber()">
+
+      📋 Copy Easypaisa Number
+
+    </button>
+
+    <button class="whatsapp-payment-btn"
+            onclick="sendPaymentWhatsApp()">
+
+      🟢 Send Transaction on WhatsApp
+
+    </button>
+
+  </div>
+
+</div>
+<script src="js/script.js"></script>
 </body>
 
 </html>
