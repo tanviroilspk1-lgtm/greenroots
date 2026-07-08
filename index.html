@@ -53,6 +53,9 @@
   "sameAs":[]
 }
 </script>
+<!-- Premium Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -117,6 +120,11 @@
   </div>
 
   <section class="hero" id="home">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto">
+    <source src="assets/video/greenroots-bg.mp4" type="video/mp4">
+</video>
+
+<div class="hero-video-overlay"></div>
     <div class="hero-pattern"></div>
     <div class="hero-glow-1"></div>
     <div class="hero-glow-2"></div>
@@ -403,22 +411,6 @@
     </div>
   </section>
 
-  <section class="section reviews-section" id="reviews">
-    <div class="section-header">
-      <div class="section-label">Customer Love</div>
-      <h2 class="section-title">What People Say</h2>
-      <div class="section-line"></div>
-    </div>
-    <div class="slider-wrapper">
-      <div class="slider-track" id="sliderTrack"></div>
-      <div class="slider-arrows">
-        <button class="slider-arrow" onclick="slideDir(-1)">‹</button>
-        <button class="slider-arrow" onclick="slideDir(1)">›</button>
-      </div>
-      <div class="slider-dots" id="sliderDots"></div>
-    </div>
-    <button class="review-form-btn" onclick="openModal('reviewModal')">✍️ Write a Review</button>
-  </section>
 
   <section class="section faq-section" id="faq">
     <div class="section-header">
@@ -457,7 +449,7 @@
           <p>Local Area — Cash on Delivery</p>
         </div>
       </div>
-      <div class="contact-card">
+      <div class="contact-card founder-card" onclick="openFounderPopup()">
         <div class="contact-card-icon"><svg viewBox="0 0 24 24">
             <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4 1.79-4 4 4 4 4 1.79 4 4-1.12 2.5-2.5 2.5z" />
           </svg></div>
@@ -614,6 +606,104 @@
       🟢 Send Transaction on WhatsApp
 
     </button>
+
+  </div>
+
+</div>
+
+<!-- ===== FOUNDER POPUP ===== -->
+
+<div id="founderPopup" class="founder-popup">
+
+<div class="founder-box">
+
+<span class="founder-close" onclick="closeFounderPopup()">×</span>
+
+<img src="assets/branding/tanveer-iqbal-qureshi.jpg"
+class="founder-photo"
+alt="Tanveer Iqbal Qureshi">
+
+<h2>Tanveer Iqbal Qureshi</h2>
+
+<h4>Founder – Green Roots Pakistan</h4>
+
+<p>
+
+Assalam-o-Alaikum 🌿
+
+<br><br>
+
+I personally prepare every Green Roots herbal oil with care,
+using selected natural ingredients.
+
+My mission is not only to sell products,
+but to help people achieve naturally healthy,
+strong and beautiful hair.
+
+Your trust is my greatest success.
+
+<br><br>
+
+Thank you for supporting Green Roots Pakistan.
+
+</p>
+
+<div class="founder-buttons">
+
+<a href="tel:+923199088670" class="founder-btn">
+📞 Call
+</a>
+
+<a href="https://wa.me/923199088670"
+target="_blank"
+class="founder-btn founder-whatsapp">
+
+💬 WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+<!-- ===== PRODUCT DETAIL POPUP ===== -->
+
+<div id="productPopup" class="product-popup">
+
+  <div class="product-popup-box">
+
+    <span class="product-popup-close" onclick="closeProductPopup()">&times;</span>
+
+    <img id="popupImage" src="" alt="Product">
+
+    <h2 id="popupTitle"></h2>
+
+    <div class="popup-price" id="popupPrice"></div>
+
+    <p id="popupDescription"></p>
+
+    <div id="popupBenefits"></div>
+
+
+      <div class="popup-buttons">
+
+    <button id="popupBuyBtn" class="popup-buy">
+        🛒 Buy Now
+    </button>
+
+    <a id="popupWhatsappBtn"
+       href="#"
+       target="_blank"
+       class="popup-whatsapp">
+
+        💬 WhatsApp
+
+    </a>
+
+</div>
+
+    </div>
 
   </div>
 

@@ -108,7 +108,7 @@ const DEFAULT_PRODUCTS = [
         const tagHTML = p.tag ? `<div class="product-tag">${p.tag}</div>` : '';
         const badgeHTML = p.badge ? `<div class="product-badge">${p.badge}</div>` : '';
         html += `
-        <div class="product-card">
+        <div class="product-card" onclick="openProductPopupById(${p.id})">
             <div class="product-img-area">
                 <img src="${p.img}" alt="${p.name} | Green Roots Pakistan Natural Hair Oil" loading="lazy" decoding="async" />
                 ${tagHTML}${badgeHTML}
@@ -127,8 +127,11 @@ const DEFAULT_PRODUCTS = [
 </div>
                 <div class="product-bottom">
                     <div class="product-price">Rs.${p.price} <small>${p.extra || ''}</small></div>
-                    <button class="product-add-cart" onclick="addToCart(${p.id})"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg></button>
-                    <a href="https://wa.me/923199088670?text=Hi!%20I%20want%20${encodeURIComponent(p.name)}%20-%20Rs.${p.price}" target="_blank" class="product-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></a>
+                    <button class="product-add-cart" onclick="event.stopPropagation();addToCart(${p.id})"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg></button>
+                    <a onclick="event.stopPropagation()"
+href="https://wa.me/923199088670?text=Hi!%20I%20want%20${encodeURIComponent(p.name)}%20-%20Rs.${p.price}"
+target="_blank"
+class="product-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg></a>
                 </div>
             </div>
         </div>`;
@@ -306,6 +309,128 @@ message += "Thank you for choosing Green Roots Pakistan.";
     function searchProducts(val) {
       renderProducts('all', val);
     }
+    // ==============================
+// Premium Counter Animation
+// ==============================
+
+let counterStarted = false;
+
+function animateCounter(id, target, suffix = "") {
+
+    const element = document.getElementById(id);
+
+    let current = 0;
+
+    const increment = Math.ceil(target / 60);
+
+    const timer = setInterval(() => {
+
+        current += increment;
+
+        if (current >= target) {
+
+            current = target;
+
+            clearInterval(timer);
+
+        }
+
+        element.innerText = current + suffix;
+
+    }, 25);
+
+}
+
+function startCounters() {
+
+    if (counterStarted) return;
+
+    counterStarted = true;
+
+    animateCounter("counter-customers", 500, "+");
+
+    animateCounter("counter-orders", 1000, "+");
+
+    animateCounter("counter-natural", 100, "%");
+
+}
+
+window.addEventListener("scroll", () => {
+
+    const section = document.querySelector(".trust-counter");
+
+    if (!section) return;
+
+    const position = section.getBoundingClientRect().top;
+
+    if (position < window.innerHeight - 100) {
+
+        startCounters();
+
+    }
+
+});
+// ==============================
+// Premium Review Slider
+// ==============================
+
+const reviewCards = document.querySelectorAll(".review-card");
+
+let currentReview = 0;
+
+function showReview(index){
+
+    reviewCards.forEach(card=>{
+
+        card.classList.remove("active");
+
+    });
+
+    reviewCards[index].classList.add("active");
+
+}
+
+let reviewInterval;
+
+if(reviewCards.length){
+
+    showReview(0);
+
+    function startReviewSlider(){
+
+        reviewInterval = setInterval(()=>{
+
+            currentReview++;
+
+            if(currentReview>=reviewCards.length){
+
+                currentReview=0;
+
+            }
+
+            showReview(currentReview);
+
+        },5000);
+
+    }
+
+    startReviewSlider();
+
+    const slider=document.querySelector(".reviews-slider");
+
+    slider.addEventListener("mouseenter",()=>{
+
+        clearInterval(reviewInterval);
+
+    });
+
+    slider.addEventListener("mouseleave",()=>{
+
+        startReviewSlider();
+
+    });
+
+}
 
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', function () {
@@ -442,3 +567,98 @@ message += "Thank you for choosing Green Roots Pakistan.";
         if (l) l.classList.add('hide');
       }, 1500);
     });
+    // ===============================
+// Founder Popup
+// ===============================
+
+function openFounderPopup(){
+
+    document.getElementById("founderPopup").style.display="flex";
+
+}
+
+function closeFounderPopup(){
+
+    document.getElementById("founderPopup").style.display="none";
+
+}
+
+// Close popup when clicking outside
+
+window.addEventListener("click",function(e){
+
+    const popup=document.getElementById("founderPopup");
+
+    if(e.target===popup){
+
+        popup.style.display="none";
+
+    }
+
+});
+// =====================================
+// PRODUCT POPUP
+// =====================================
+function openProductPopupById(id){
+
+    const product = products.find(p => p.id === id);
+
+    if(product){
+
+        openProductPopup(product);
+
+    }
+
+}
+
+function openProductPopup(product){
+
+    document.getElementById("popupImage").src = product.img;
+
+    document.getElementById("popupTitle").innerText = product.name;
+
+    document.getElementById("popupPrice").innerText = "Rs. " + product.price;
+
+    document.getElementById("popupDescription").innerText =
+        product.description || "Premium Herbal Hair Oil.";
+
+    document.getElementById("popupBenefits").innerHTML =
+        product.benefits || "";
+        // Buy Button
+
+document.getElementById("popupBuyBtn").onclick = function(){
+
+    addToCart(product.id);
+
+    closeProductPopup();
+
+};
+
+// WhatsApp Button
+
+document.getElementById("popupWhatsappBtn").href =
+`https://wa.me/923199088670?text=Hi! I want ${encodeURIComponent(product.name)} - Rs.${product.price}`;
+
+    document.getElementById("productPopup").classList.add("active");
+
+}
+
+function closeProductPopup(){
+
+    document.getElementById("productPopup").classList.remove("active");
+
+}
+
+// Close when clicking outside
+
+window.addEventListener("click",function(e){
+
+    const popup=document.getElementById("productPopup");
+
+    if(e.target===popup){
+
+        closeProductPopup();
+
+    }
+
+});
