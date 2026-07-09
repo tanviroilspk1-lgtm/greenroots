@@ -149,6 +149,9 @@ class="product-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1
       renderCart();
       updateCartBadge();
       showToast('🛒 Added: ' + p.name);
+      openCartSidebar();
+
+renderCartSidebar();
     }
 
     function removeFromCart(id) {
@@ -662,3 +665,138 @@ window.addEventListener("click",function(e){
     }
 
 });
+// =====================================
+// CART SIDEBAR
+// =====================================
+
+function openCartSidebar(){
+
+renderCartSidebar();
+
+document.getElementById("cartSidebar").classList.add("active");
+
+document.getElementById("cartSidebarOverlay").classList.add("active");
+
+}
+
+function closeCartSidebar(){
+
+document.getElementById("cartSidebar").classList.remove("active");
+
+document.getElementById("cartSidebarOverlay").classList.remove("active");
+
+}
+
+function renderCartSidebar(){
+
+const items=document.getElementById("cartSidebarItems");
+
+const total=document.getElementById("cartSidebarTotal");
+
+const wa=document.getElementById("cartSidebarWhatsApp");
+
+if(!items) return;
+
+items.innerHTML="";
+
+let grandTotal=0;
+
+let msg="Assalam-o-Alaikum.%0A%0AI want to order:%0A%0A";
+
+cart.forEach(item=>{
+
+grandTotal+=item.price*item.qty;
+
+msg+=`${item.name} x${item.qty} - Rs.${item.price*item.qty}%0A`;
+
+items.innerHTML+=`
+
+<div style="display:flex;gap:12px;margin-bottom:15px;align-items:center;">
+
+<img src="${item.img}"
+
+style="width:60px;height:60px;border-radius:10px;object-fit:cover;">
+
+<div>
+
+<div style="font-weight:700;">${item.name}</div>
+
+<div class="cart-qty">
+
+<button onclick="changeQty(${item.id},-1)">−</button>
+
+<span>${item.qty}</span>
+
+<button onclick="changeQty(${item.id},1)">+</button>
+
+</div>
+
+<div style="color:#0F5132;font-weight:700;">
+
+Rs.${item.price*item.qty}
+
+</div>
+
+<button class="cart-remove"
+
+onclick="removeCartItem(${item.id})">
+
+🗑 Remove
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+});
+total.innerText = "Rs." + grandTotal;
+
+msg += "%0A--------------------%0A";
+msg += "Total = Rs." + grandTotal;
+msg += "%0A%0AName:%0ACity:%0AAddress:%0APhone:%0A";
+
+wa.href =
+"https://wa.me/923199088670?text=" + msg;
+
+
+}
+function changeQty(id, change){
+
+const item = cart.find(x => x.id === id);
+
+if(!item) return;
+
+item.qty += change;
+
+if(item.qty <= 0){
+
+cart = cart.filter(x => x.id !== id);
+
+}
+
+try{
+localStorage.setItem("gr_cart", JSON.stringify(cart));
+}catch(e){}
+
+renderCart();
+updateCartBadge();
+renderCartSidebar();
+
+}
+
+function removeCartItem(id){
+
+cart = cart.filter(x => x.id !== id);
+
+try{
+localStorage.setItem("gr_cart", JSON.stringify(cart));
+}catch(e){}
+
+renderCart();
+updateCartBadge();
+renderCartSidebar();
+
+}
