@@ -60,6 +60,9 @@
 </head>
 
 <body>
+  <div id="flyingCartItem" class="flying-cart-item">
+    <img id="flyingCartImage" src="" alt="">
+</div>
 
   <div class="loader" id="loader">
     <div class="loader-brand">GREEN ROOTS</div>
@@ -734,15 +737,23 @@ class="founder-btn founder-whatsapp">
 
         </div>
 
-        <a
-        href="#"
-        id="cartSidebarWhatsApp"
-        target="_blank"
-        class="cart-checkout">
+        <button
+id="cartSidebarBuyNow"
+class="cart-buynow">
 
-        💬 Checkout on WhatsApp
+🛒 Buy Now
 
-        </a>
+</button>
+
+<a
+href="#"
+id="cartSidebarWhatsApp"
+target="_blank"
+class="cart-checkout">
+
+💬 Checkout on WhatsApp
+
+</a>
 
     </div>
 
@@ -751,6 +762,39 @@ class="founder-btn founder-whatsapp">
 <div id="cartSidebarOverlay"
 class="cart-overlay"
 onclick="closeCartSidebar()">
+
+</div>
+<!-- ===== PAYMENT POPUP ===== -->
+
+<div id="paymentPopup" class="payment-popup">
+
+<div class="payment-box">
+
+<span class="payment-close" onclick="closePaymentPopup()">×</span>
+
+<h2>Choose Payment Method</h2>
+
+<p>Select your preferred payment option.</p>
+
+<button
+id="easyPaisaBtn"
+class="payment-option">
+💳 EasyPaisa
+</button>
+
+<button
+id="jazzCashBtn"
+class="payment-option">
+🏦 JazzCash
+</button>
+
+<button
+id="codBtn"
+class="payment-option">
+🚚 Cash on Delivery
+</button>
+
+</div>
 
 </div>
 <script src="js/script.js"></script>

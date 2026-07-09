@@ -127,7 +127,8 @@ const DEFAULT_PRODUCTS = [
 </div>
                 <div class="product-bottom">
                     <div class="product-price">Rs.${p.price} <small>${p.extra || ''}</small></div>
-                    <button class="product-add-cart" onclick="event.stopPropagation();addToCart(${p.id})"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg></button>
+                    <button class="product-add-cart"
+onclick="event.stopPropagation();addToCart(${p.id},event)"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg></button>
                     <a onclick="event.stopPropagation()"
 href="https://wa.me/923199088670?text=Hi!%20I%20want%20${encodeURIComponent(p.name)}%20-%20Rs.${p.price}"
 target="_blank"
@@ -139,8 +140,9 @@ class="product-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1
       grid.innerHTML = html;
     }
 
-    function addToCart(id) {
+    function addToCart(id,e){
       const p = products.find(x => x.id === id);
+      flyToCart(e,p.img);
       if (!p) return;
       const existing = cart.find(x => x.id === id);
       if (existing) existing.qty++;
@@ -686,6 +688,74 @@ document.getElementById("cartSidebar").classList.remove("active");
 document.getElementById("cartSidebarOverlay").classList.remove("active");
 
 }
+function openPaymentPopup(){
+
+document.getElementById("paymentPopup").classList.add("active");
+
+}
+
+function closePaymentPopup(){
+
+document.getElementById("paymentPopup").classList.remove("active");
+
+}
+// ===============================
+// PAYMENT METHODS
+// ===============================
+
+const easyBtn = document.getElementById("easyPaisaBtn");
+
+const jazzBtn = document.getElementById("jazzCashBtn");
+
+const codBtn = document.getElementById("codBtn");
+
+if(easyBtn){
+
+easyBtn.onclick = function(){
+
+window.open(
+
+"https://wa.me/923199088670?text=Assalam-o-Alaikum.%0A%0AI want to pay via EasyPaisa.",
+
+"_blank"
+
+);
+
+};
+
+}
+
+if(jazzBtn){
+
+jazzBtn.onclick = function(){
+
+window.open(
+
+"https://wa.me/923199088670?text=Assalam-o-Alaikum.%0A%0AI want to pay via JazzCash.",
+
+"_blank"
+
+);
+
+};
+
+}
+
+if(codBtn){
+
+codBtn.onclick = function(){
+
+window.open(
+
+"https://wa.me/923199088670?text=Assalam-o-Alaikum.%0A%0AI want Cash on Delivery.",
+
+"_blank"
+
+);
+
+};
+
+}
 
 function renderCartSidebar(){
 
@@ -760,6 +830,17 @@ msg += "%0A%0AName:%0ACity:%0AAddress:%0APhone:%0A";
 
 wa.href =
 "https://wa.me/923199088670?text=" + msg;
+const buyBtn = document.getElementById("cartSidebarBuyNow");
+
+if(buyBtn){
+
+buyBtn.onclick = function(){
+
+openPaymentPopup();
+
+};
+
+}
 
 
 }
@@ -798,5 +879,85 @@ localStorage.setItem("gr_cart", JSON.stringify(cart));
 renderCart();
 updateCartBadge();
 renderCartSidebar();
+
+}
+// =====================================
+// SCROLL REVEAL ANIMATION
+// =====================================
+
+const revealElements = document.querySelectorAll(
+".section,.product-card,.about-card,.contact-card,.faq-item,.founder-card"
+);
+
+const revealObserver = new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("reveal");
+
+entry.target.classList.add("active");
+
+}
+
+});
+
+},{
+threshold:0.15
+});
+
+revealElements.forEach(el=>{
+
+el.classList.add("reveal");
+
+revealObserver.observe(el);
+
+});
+// =====================================
+// FLY TO CART
+// =====================================
+
+function flyToCart(e,imgSrc){
+
+const fly=document.getElementById("flyingCartItem");
+
+const flyImg=document.getElementById("flyingCartImage");
+
+const cart=document.getElementById("cartToggle");
+
+if(!fly || !flyImg || !cart || !e)return;
+
+flyImg.src=imgSrc;
+
+const start=e.target.closest(".product-card").getBoundingClientRect();
+
+const end=cart.getBoundingClientRect();
+
+fly.style.left=start.left+"px";
+
+fly.style.top=start.top+"px";
+
+fly.style.opacity="1";
+
+fly.style.transform="scale(1)";
+
+setTimeout(()=>{
+
+fly.style.left=end.left+"px";
+
+fly.style.top=end.top+"px";
+
+fly.style.transform="scale(.25)";
+
+},30);
+
+setTimeout(()=>{
+
+fly.style.opacity="0";
+
+fly.style.transform="scale(.8)";
+
+},1150);
 
 }
