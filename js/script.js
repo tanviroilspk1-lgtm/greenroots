@@ -150,8 +150,8 @@ class="product-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1
       try { localStorage.setItem('gr_cart', JSON.stringify(cart)); } catch (e) { }
       renderCart();
       updateCartBadge();
-      showToast('🛒 Added: ' + p.name);
-      openCartSidebar();
+      showCartHint();
+     renderCartSidebar();
 
 renderCartSidebar();
     }
@@ -959,5 +959,24 @@ fly.style.opacity="0";
 fly.style.transform="scale(.8)";
 
 },1150);
+
+}
+// =====================================
+// CART HINT
+// =====================================
+
+function showCartHint(){
+
+const hint=document.getElementById("cartHint");
+
+if(!hint) return;
+
+hint.classList.add("show");
+
+setTimeout(()=>{
+
+hint.classList.remove("show");
+
+},3000);
 
 }
