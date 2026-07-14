@@ -140,13 +140,7 @@ class="product-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1
       grid.innerHTML = html;
       requestAnimationFrame(() => {
 
-    const cards = document.querySelectorAll(".product-card");
-
-    cards.forEach(card => {
-
-        card.style.opacity = "1";
-
-    });
+    grid.classList.add("products-loaded");
 
 });
     }
@@ -163,8 +157,7 @@ class="product-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1
       updateCartBadge();
       showCartHint();
      renderCartSidebar();
-
-renderCartSidebar();
+     
     }
 
     function removeFromCart(id) {
