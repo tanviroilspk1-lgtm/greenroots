@@ -326,7 +326,7 @@ function animateCounter(id, target, suffix = "") {
 
     let current = 0;
 
-    const increment = Math.ceil(target / 60);
+   const increment = Math.max(1, Math.ceil(target / 40));
 
     const timer = setInterval(() => {
 
@@ -342,7 +342,7 @@ function animateCounter(id, target, suffix = "") {
 
         element.innerText = current + suffix;
 
-    }, 25);
+    }, 40);
 
 }
 
