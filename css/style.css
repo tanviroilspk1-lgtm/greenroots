@@ -81,15 +81,20 @@
       box-sizing: border-box
     }
 
-    html {
-      scroll-behavior: smooth
-    }
+   html{
+
+scroll-behavior:smooth;
+
+-webkit-overflow-scrolling:touch;
+
+}
 
     body {
       font-family: 'Poppins', sans-serif;
       color: var(--text);
       background: var(--bg);
       overflow-x: hidden;
+      touch-action:pan-y;
       transition: background .4s, color .4s
     }
 
@@ -894,6 +899,7 @@ font-weight:700;
       box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
       backdrop-filter: blur(12px);
       cursor: pointer;
+      will-change: transform;
     }
 
     .product-card:hover {
@@ -3924,6 +3930,32 @@ transform:translateY(0);
 to{
 
 transform:translateY(-10px);
+
+}
+
+}
+/* =====================================
+   MOBILE VIDEO OPTIMIZATION
+===================================== */
+
+@media(max-width:768px){
+
+.hero-video{
+
+display:none;
+
+}
+
+.hero-video-overlay{
+
+display:none;
+
+}
+
+.hero{
+
+background:url("assets/images/mobile-hero.jpg")
+center center/cover no-repeat;
 
 }
 
