@@ -895,12 +895,18 @@ font-weight:700;
       border: 1px solid rgba(255, 255, 255, .6);
       border-radius: 24px;
       overflow: hidden;
-      transition: all .4s ease;
+
+      transition:
+      transform .35s,
+      box-shadow .35s,
+      opacity .25s;
       box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
       /* backdrop-filter: blur(12px); */
       cursor: pointer;
-      will-change: transform;
+      will-change: auto;
+      
     }
+    
 
     .product-card:hover {
       transform: translateY(-6px);
